@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{
+	text-decoration:none;
+	color:#F00;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	
+}
+a:link{
+	color:#93F;
+}
+a:visited{
+	color:#0F0;
+}
+a:hover{
+	color:#00C;
+}
+
+a:active{
+	color:#F30;
+}
+img{
+	max-width:500px;
+}
+#ct1{
+	text-align:center;
+	
+}
+
+#ct2{
+	text-align:center;
+}
+#ct3{
+	text-align:center;
+}
+#ct4{
+	text-align:center;
+}
+#ct5{
+	text-align:center;
+}
+#ct6{
+	text-align:center;
+}
+#ct7{
+	text-align:center;
+}
+#ct8{
+	text-align:center;
+}
+#ct9{
+	text-align:center;
+}
+#ct10{
+	text-align:center;
+}
+
+
+
+
