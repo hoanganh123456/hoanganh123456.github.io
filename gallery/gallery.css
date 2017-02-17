@@ -10,6 +10,7 @@ body{
 #wrap{
 	max-width:1000px;
 	margin:auto;
+	background-color:#e19fd9;
 }
 #banner img{
 	max-width:100%;
