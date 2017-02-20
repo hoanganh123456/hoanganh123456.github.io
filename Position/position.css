@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0;
+	padding:0;
+	   background-color:#CCC;
+}
+#wrap{
+	max-width:1200px;
+	margin:auto;
+	position:relative;
+}
+
+/*Style cho anh nhỏ*/
+.image-icon{
+	width:350px;
+	margin-left: -44px;
+	float:left;
+	padding:13px;
+	margin-top: 39px;
+	margin-left:4px;
+	margin-bottom:12px;
+
+}
+.image-icon img{
+	border:5px solid #33F;
+	border-radius:12%;
+	margin:10px 40px;
+	max-width:100%;
+	-webkit-transform:scale(0.8); 
+	-moz-transform:scale(0.8); 
+	-o-transform:scale(0.8); 
+	-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s; 
+	-o-transition-duration: 0.5s;
+	
+}
+.image-icon img:hover{
+	-webkit-transform:scale(1.2); 
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	box-shadow:0px 0px 30px  #CC0066; 
+	-webkit-box-shadow:0px 0px 30px #CC0066;
+	-moz-box-shadow:0px 0px 30px #CC0066;
+}
+
+/*Style cho banner*/
+#baner{
+	position:relative;
+}
+#banner img{
+	width: 890px;
+    margin-left: 283px;
+	max-width: 66%;
+	
+}
+
+/*Style cho menu*/
+#main-menu ul {
+   background: #8AD385;
+   width: 250px;
+   padding: 0;
+   list-style-type: none;
+   text-align: left;
+   margin-left: 28px;
+   border-radius: 8px;
+}
+#main-menu li {
+ width: auto;
+ height: 40px;
+ line-height: 40px;
+ border-bottom: 1px solid #e8e8e8;
+ padding: 0 1em;
+}
+
+#main-menu li a {
+ text-decoration: none;
+ color: #333;
+ font-weight: bold;
+ display: block;
+}
+
+#main-menu li:hover {
+ background: #CDE2CD;
+ 
+}
+
+#main-menu ul li {
+ position: relative;
+ border: 2px solid #8AD385;
+ border-radius: 8px;
+ 
+}
+
+#main-menu ul li a{
+	color:#300;
+	font-size:17px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#main-menu ul li  a:hover{
+	color:#C30;
+}
+
+#main-menu{
+	left: -16px;
+    position: absolute;
+    top: -16px;
+	margin-right:12px;
+}
+
+/*Style cho anh chat*/
+#chat{
+	position: fixed;
+  right: 30px;
+    bottom: 3px;
+    max-width: 2%;
+}
+
+
