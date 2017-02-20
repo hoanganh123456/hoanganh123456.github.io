@@ -6,12 +6,20 @@
 body{
 	margin:0;
 	padding:0;
+<<<<<<< HEAD
     background-color:#CCC;
+=======
+	background-color:#CCC;
+>>>>>>> origin/master
 }
 #wrap{
 	max-width:1000px;
 	margin:auto;
+<<<<<<< HEAD
 	
+=======
+	background-color:#e19fd9;
+>>>>>>> origin/master
 }
 
 #banner img{
@@ -70,6 +78,11 @@ body{
   display: block;
 }
 #main-menu a:hover{
+<<<<<<< HEAD
    background: #FCC;
   color: #30C;
+=======
+	color:#C03;
+	background:#0FF;
+>>>>>>> origin/master
 }
