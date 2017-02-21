@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+}
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:500;
+	background-color:#666;
+
+}
+@keyframes title{
+	0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+h1{
+	font-size: 42px;
+    color: #ffa433;
+	letter-spacing:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	animation: title 5s ease infinite;
+}
+.thumb{
+	width:250px;
+	margin-left: -44px;
+	float:left;
+	padding:13px;
+	margin-top: 39px;
+	margin-left:4px;
+	margin-bottom:12px;
+}
+.wrap{
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+.thumb img{
+	max-width: 100%;
+	float:left;
+	margin-bottom: 3px;
+	margin-left: 125px;
+	border:5px solid #309;
+	transition: all 0.5s linear;
+	border-radius:12%;
+	-webkit-transform:scale(0.8); 
+	-moz-transform:scale(0.8); 
+	-o-transform:scale(0.8); 
+	-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s; 
+	-o-transition-duration: 0.5s; 
+}
+@keyframes fadein{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+.thumb img:hover{ 	
+	animation:fadein 5s ease infinite;
+	border-radius:12%;
+	-webkit-transform:scale(1.2); 
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	box-shadow:0px 0px 30px  #CC0066; 
+	-webkit-box-shadow:0px 0px 30px #CC0066;
+	-moz-box-shadow:0px 0px 30px #CC0066;
+	
+	
+}
+@keyframes move{
+		0% {
+		opacity: 1;
+		margin-left: 355px;
+	}
+	25% {
+		opacity: -0.5;
+		margin-right: 710px;
+	}
+	50% {
+		opacity: 0.5;
+		
+	}
+	75% {
+		opacity: 0.7;
+		margin-left: 312px;
+	}
+	100% {
+		opacity: 1;
+		margin-right: 9px;
+	}
+}
+h3{
+    text-align: right;
+	color:#903;
+	animation:move 2s ease infinite;
+}
+@keyframes fadeout{
+	0%{opacity:1}
+	100%{opacity:0}
+}
+.thumb1 img:hover{
+	animation:fadeout 5s ease infinite;
+}
