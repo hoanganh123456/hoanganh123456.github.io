@@ -11,14 +11,14 @@ function bai1(x){
 		return x*x;
 		}
 	var x = parseInt (prompt("Nhập giá trị x"));
-	document.write(" Bài 1 = "+bai1(x) + "<br>");
+	alert(" Bài 1 = "+bai1(x) + "<br>");
 	
 	
 	var a = parseInt (prompt("Nhập giá trị a"));
 	var b =  parseInt (prompt("Nhập giá trị b"));
 	var c =parseInt (prompt("Nhập giá trị c"));
 	var kq = 3*a+2*b+c;
-	document.write("Bài 2 = "+bai1(kq));
+	alert("Bài 2 = "+bai1(kq));
 }
 //bài 3
 function bai3(){
@@ -26,7 +26,7 @@ var str = prompt("Mời nhập chuỗi 100 ký tự");
 	function bai3(str){
 		return str.slice(0,11);
 	}
-	document.writeln(bai3(str)+" ...");	
+	alert(bai3(str)+" ...");	
 }
 //bài 4 
 function bai4(){
@@ -34,14 +34,14 @@ var str =prompt("nhập chuỗi cần đổi");
 	function bai4(str){
 		return str.charAt(0).toUpperCase()+str.slice(1).toLowerCase();
 	}
-	document.write(bai4(str));
+	alert(bai4(str));
 }
 //bài 5 
 function bai5(){
 var  points=[4,9,1,2,8,7,6];
 	 function bai5(a, b){return a-b};
 	 points.sort(bai5)
-	document.write("Số nhỏ nhất : "+points[0]);	
+	alert("Số nhỏ nhất : "+points[0]);	
 }
 //bài 6 
 function bai6(){
@@ -54,7 +54,7 @@ var a = prompt("Nhập tên học viên");
 	function bai6(student){
 		return student.sort();
 	}
-	document.writeln(bai6(student));	
+	alert(bai6(student));	
 }
 //bài 7 
 function bai7(){
@@ -82,7 +82,7 @@ var teacher = {
 		}
 	}
 	var aboutMe = function bai7(){
-		document.writeln("Tôi là "+this.firstName+" "+this.lastName+" Tuổi "+this.age+"<br>");
+		alert("Tôi là "+this.firstName+" "+this.lastName+" Tuổi "+this.age+"<br>");
 	}
 	teacher.say = aboutMe;
 	teacher.say();
@@ -97,7 +97,7 @@ var teacher = {
 </head>
 
 <body>
-<button onClick="bai1()">Bài 1</button>
+<button onClick="bai1()">Bài 1 + 2</button>
 <button onClick="bai3()">Bài 3</button>
 <button onClick="bai4()">Bài 4</button>
 <button onClick="bai5()">Bài 5</button>
