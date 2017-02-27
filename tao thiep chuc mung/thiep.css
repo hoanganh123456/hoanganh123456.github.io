@@ -8,6 +8,11 @@ body{
 *{
 	box-sizing:border-box;
 }
+.wrap{
+	max-width:1280px;
+	margin:auto;
+	position: relative;
+}
 .bg{
 	max-width:1280px;
 	margin:auto;
@@ -70,7 +75,7 @@ body{
     100% {color: #3b9900;}
 }
 .text{
-	position: absolute;
+	position: fixed;
     text-align: right;
     right: 1px;
     bottom: 335px;
