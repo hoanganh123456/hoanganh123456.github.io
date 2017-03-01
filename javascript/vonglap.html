@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bài tập vòng lặp</title>
+<script>
+//bài 1
+function bai1(){
+var kq=1;
+var n = parseInt (prompt("Nhập số nguyên "));
+function gt(kq,n){
+	for(i=1;i<=n;i++){
+		kq=kq*i;
+		
+	}
+	 return kq;
+}
+document.write(gt(kq,n));
+}
+//bài 2
+function bai2(){
+	var str = prompt("Nhập dữ liệu");
+	function reverseStr (str) {
+    var tR = [ ];
+    str = str.split("");
+    for ( var i = str.length - 1; i >= 0; i-- ) {
+        tR.push( str[ i ] );
+    }
+    return tR.join( "" );
+}
+
+document.write(reverseStr(str));
+}
+//bài 3
+function bai3(){
+var str = prompt("Nhap chuoi");
+  function duplicate(str) {
+	  var arr=[];
+            for (i = 0; i < 10; i++) {
+                arr.push(str);
+            }
+			return arr.join("-");
+        }
+document.write(duplicate(str));	
+}
+//bài 4 
+function bai4(){
+var arr=['ha','chi','nam','trung'];
+function sxhv(arr){
+     arr.sort();
+}
+ for ( var i = 0 ; i < arr.length ; i++ ) {
+     	document.write(i+" "+arr[i]+"<br>");
+			
+		}
+}
+//bài 5
+function bai5(){
+var arr = [1,2,3];
+        function x2a(arr) {
+        var b=[];
+            for (i = 0; i < arr.length; i++) {
+                b[i]=arr[i]*2;
+            }
+          return b;
+        }
+		  document.write("[" + x2a(arr) + "]");
+}
+//bài 6 
+function bai6(){
+ var arr = [5,9,7];
+        function x2a(arr) {
+        var b=[];
+            for (i = 0; i < arr.length; i++) {
+                b[i]=arr[i]%2;
+            }
+          return b;
+        }
+		  document.write("[" + x2a(arr) + "]");
+}
+</script>
+
+</head>
+
+<body>
+<button onClick="bai1()">Bài 1</button>
+<button onClick="bai2()">Bài 2</button>
+<button onClick="bai3()">Bài 3</button>
+<button onClick="bai4()">Bài 4</button>
+<button onClick="bai5()">Bài 5</button>
+<button onClick="bai6()">Bài 6</button>
+
+
+</body>
+</html>
