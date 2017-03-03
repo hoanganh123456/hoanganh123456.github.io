@@ -5,6 +5,7 @@
 <title>điều kiện</title>
 <script>
 //bài 1 
+	function bai1(){
 var x = parseInt(prompt("Nhập x"));
 var y = parseInt(prompt("Nhập y"));
 	function kiemtra(x,y){
@@ -21,7 +22,9 @@ var y = parseInt(prompt("Nhập y"));
 		}
 	}
 	document.write(kiemtra(x,y));
+	}
 //bài 2 
+	function bai2(){
 var n = parseInt(prompt("Nhập số"));
 function gt(n){
 	var kq=1;
@@ -36,7 +39,9 @@ function gt(n){
 	}
 }
 document.write(gt(n));
+	}
 //bài 3 
+	function bai3(){
 var arr = [1,2,3,4,5,6,7,8];
 var arrNew =[];
 function math(arr){
@@ -52,7 +57,9 @@ document.write("["+math(arr)+"]"+"<br>");
 function sx(a,b){return b-a}
 
 document.write("Mảng sắp sếp là :"+arrNew.sort(sx));	
+	}
 //bài 4
+	function bai4(){
 var user={
 	userName:"root",
 	passWord:"adminhh",
@@ -76,10 +83,16 @@ var user={
 		}
 	}
 document.write(testArr(user));
-
+	}
 </script>
 </head>
 
 <body>
+<button onClick="bai1()">Bài 1</button>
+<button onClick="bai2()">Bài 2</button>
+<button onClick="bai3()">Bài 3</button>
+<button onClick="bai4()">Bài 4</button>
+
+
 </body>
 </html>
