@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>điều kiện 2</title>
+<script>
+//bài 1 
+function bai1(){
+var n = parseInt(prompt("Nhập tháng"));
+var now = new Date();
+switch(n){
+	case 2 :
+	case 3 :
+	case 4 :
+	    document.write(now + "<br>");
+		document.write("Mùa xuân")
+		break;
+	case 5 :
+	case 6 :
+	case 7 :
+	    document.write(now + "<br>");
+		document.write("Mùa hè")
+		break;
+	case 8 : 	
+	case 9 : 
+	case 10 : 
+		document.write(now + "<br>");
+		document.write("Mùa thu")
+		break;
+	case 11 :
+	case 12 :
+	case 1 :
+		document.write(now);
+		document.write("Mùa đông")
+		break;
+}
+}
+//bài 2
+function bai2(){
+var str = prompt("Nhập chuỗi ");
+function catchuoi(str){
+	if(str.length > 10){
+		return str.slice(0,10)+"...";
+	}
+	else{
+		return str;
+	}
+}
+
+document.write(catchuoi(str));
+}
+//bài 3
+function bai3(){
+var x = parseInt(prompt("Nhập điểm học sinh"));
+	function point(x){
+	if(8.5 <=x && x<= 10){
+		return "Điểm A";
+	}
+	else if( 7 <=x && x<= 8.4){
+		return "Điểm B";
+	}
+	else if( 5.5 <= x && x<= 6.9 ){
+		return "Điểm C";
+	}
+	else if(4 <=x && x<= 5.4){
+		return "Điểm D";
+	}
+	else if(0 <=x && x<= 3.9){
+		return "Điểm F";
+	}
+	else{
+		alert("Bạn đã nhập sai");
+	}
+}
+document.write(point(x));
+}
+//bài 4
+function bai4(){
+var x = parseInt(prompt("Nhập mã quốc gia"));
+function translate(x){
+	switch(x){
+		case 86:
+			kq= "hello"+ "->"+"Trung :"+"你好";
+			break;
+		case 491:
+			 kq="hello"+ "->"+ "Nga :" + "Здравствуйте";
+			break;
+		case 39:
+			kq=  "hello"+ "->"+"Ý :"+"Ciao";
+			break;
+		case 81:
+			kq=   "hello"+ "->"+"Nhật :"+"こんにちは";
+			break;
+		case 856:
+			kq=   "hello"+ "->"+"Lào :"+"ສະບາຍດີ";
+			break;
+		default:
+			 kq=  "hello"+ "->"+"Việt Nam :"+"Xin chào";	
+			
+		
+	}
+	return kq;
+	
+}
+document.write(translate(x));
+}
+//bài 5
+function bai5(){
+var arr = ["false", "false", "false", "true", "false", "true", "false", "true"];
+ function kiemtra(arr) {
+        kq= arr.indexOf("true");
+		 return kq;
+    }
+document.write(kiemtra(arr));
+}
+//bài 6
+function bai6(){
+function bai6(n) {
+        for (var i = 1; i <= n;) {
+            while (i % 2 == 0) {
+                document.write("<p style='color: red;'>" + i + "</p>");
+                i++;
+            }
+            while (i % 2 == 1) {
+                while (i == (n + 1)) { // Hoàn toàn có thể sử dụng if
+                    return false;
+                }
+                document.write("<p style='color: blue;'>" + i + "</p>");
+                i++;
+            }
+        }
+    }
+document.write(bai6(100))	
+}
+</script>
+</head>
+
+<body>
+<button onClick="bai1()">Bài 1</button>
+<button onClick="bai2()">Bài 2</button>
+<button onClick="bai3()">Bài 3</button>
+<button onClick="bai4()">Bài 4</button>
+<button onClick="bai5()">Bài 5</button>
+<button onClick="bai6()">Bài 6</button>
+
+</body>
+</html>

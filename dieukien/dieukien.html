@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>điều kiện</title>
+<script>
+//bài 1 
+var x = parseInt(prompt("Nhập x"));
+var y = parseInt(prompt("Nhập y"));
+	function kiemtra(x,y){
+		if(typeof(x) == "number"){
+			if(x>y){
+				return "x là số lớn nhất";
+			}
+			else{
+				return "y là số lớn nhất";
+			}
+		}
+		else{
+			return "số bạn nhập không phải là số vui lòng nhập lại";
+		}
+	}
+	document.write(kiemtra(x,y));
+//bài 2 
+var n = parseInt(prompt("Nhập số"));
+function gt(n){
+	var kq=1;
+	if(n>0){
+	for(var i = 1;i<=n;i++){
+		kq=kq*i;
+	}
+	return kq;
+	}
+	else{
+		return "Mời nhập lại";
+	}
+}
+document.write(gt(n));
+//bài 3 
+var arr = [1,2,3,4,5,6,7,8];
+var arrNew =[];
+function math(arr){
+	
+	for(i=0;i<arr.length;i++){
+		if(arr[i]%2==0)
+		arrNew.push(arr[i]);
+	}
+	return arrNew.join(",");
+}
+
+document.write("["+math(arr)+"]"+"<br>");
+function sx(a,b){return b-a}
+
+document.write("Mảng sắp sếp là :"+arrNew.sort(sx));	
+//bài 4
+var user={
+	userName:"root",
+	passWord:"adminhh",
+	re_pass:"adminhh"
+}
+    function testArr(user){
+		if(user.userName = ""){
+			return "Không được để rỗng";
+		}
+		else{
+			if(user.userName.length != ""
+			&& user.userName.length < 20
+			&& user.passWord.length < 32
+			&& user.passWord.length > 6
+			&& user.passWord == user.re_pass){
+				return "hợp lệ";
+			}
+			else{
+				return "Nhập sai nhập lại";
+			}
+		}
+	}
+document.write(testArr(user));
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
