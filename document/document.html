@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>document</title>
+<link rel="stylesheet" type="text/css" href="document.css">
+
+</head>
+<body>
+<div id="wrap">
+        <div class="box">
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non arcu ante. In imperdiet libero nunc, viverra    sodales tortor sollicitudin et. Vivamus ante nibh, sagittis non eleifend quis, lobortis nec nibh. Nam vestibulum urna nec massa vestibulum placerat. In sed tortor vestibulum, viverra nisl at, accumsan dolor. Suspendisse ex eros, congue imperdiet nisl non, dignissim accumsan orci. Nunc non magna sit amet lectus placerat sodales. Vivamus hendrerit non eros vitae volutpat. In hac habitasse platea dictumst.</p>
+        </div>
+        <div class="box">
+     <p  id="p2">Suspendisse potenti. Integer condimentum consectetur quam vel sodales. Donec rhoncus dolor enim, vitae vehicula sapien auctor non. Proin ultrices blandit mi eget mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce eu sem id lorem tempus convallis vitae ut velit. Aenean non odio diam. Pellentesque eget hendrerit erat, in bibendum sem. Donec gravida, nisi eget bibendum eleifend, felis sem vehicula felis, at viverra urna massa ut felis. Integer ac congue ex. Integer venenatis massa ullamcorper velit varius, in viverra mi maximus. Donec hendrerit, urna vel posuere faucibus, elit purus placerat nisi, sit amet varius odio sem et leo.</p>
+        </div>
+        <div class="box">
+     <p id="p3">Aliquam aliquet non dui a laoreet. Vivamus sapien metus, sollicitudin sed bibendum sed, dictum rutrum dui. Aenean non sapien tortor. Mauris vel sapien pulvinar, hendrerit eros nec, tempor justo. Nulla pharetra lectus risus, sed malesuada ex bibendum id. Nunc maximus porta luctus. Quisque et metus aliquam, dapibus odio ac, elementum ligula. Aliquam placerat, est eget rutrum sodales, ex libero dignissim odio, ac volutpat ligula urna elementum velit. Ut id ligula sollicitudin, ornare libero ac, pharetra felis. Nulla rhoncus ornare ante, eu consequat justo interdum quis. Etiam vitae libero urna. Mauris ultricies cursus dui ut ultricies. Donec ut quam quis justo ullamcorper venenatis in ac odio. In placerat lectus in tempor aliquet.</p>
+        </div>
+
+ 		<button type="button" onClick="changeFontSize()">changeFontSize(x)</button>
+        <button onClick="increaseFontSize()">increaseFontSize(paragraph)</button>
+        <button onClick="decreaseFontSize()">decreaseFontSize(paragraph)</button>
+        <button onClick="changeColor()">changeColor()</button>
+        <button onClick="changeBgColor()"> changeBgColor(color)</button>
+        <button onClick="copyContent()">copyContent(paragraph1, paragraph2)</button>
+</div>
+<script>
+function changeFontSize(){
+	document.getElementById("wrap").style.fontSize="20px"
+	
+}
+function increaseFontSize(){
+	document.getElementById("p1").style.fontSize="30px"
+}
+function decreaseFontSize(){
+	document.getElementById("p2").style.fontSize="10px"
+}
+function changeColor(){
+	document.getElementById("p1").style.color="#1aff1a"
+	document.getElementById("p2").style.color="#ffff00"
+	document.getElementById("p3").style.color="#ff0000"
+}
+function changeBgColor(){
+	document.body.style.backgroundColor="#adad85"
+}
+function copyContent(){
+	var x = document.getElementById("p2").innerHTML;
+	document.getElementById("p1").innerHTML=x;
+}
+</script>
+</body>
+</html>

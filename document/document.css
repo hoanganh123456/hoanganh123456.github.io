@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{
+	margin:auto;
+	max-width:1200px;
+}
+.p{
+	text-indent:15px;
+}
