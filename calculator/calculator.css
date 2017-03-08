@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	width:500px;
+	margin:4% auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	background-color:#993;
+}
+@keyframes change{
+	0%{
+		color:#C60;
+	}
+	25%{
+		color:#C36;
+	}
+	50%{
+		color:#F36;
+	}
+	75%{
+		color:#F69
+	}
+	100%{
+		color:#C00;
+	}
+}
+
+h1{
+	text-align:center;
+	animation:change 2s infinite;
+	font-size:50px;
+	
+}
+#calculator{
+	background-color:#63F;
+	height: 374px;
+	box-shadow:0px 0px 90px gray;
+	text-align:center;
+
+}
+
+#display{
+	text-align:right;
+	border:1px solid #C60;
+	font-size:20px;
+	color:#C09;
+	width: 446px;
+    height: 35px;
+	margin:10px;
+	margin-bottom:10px;
+}
+#keys{
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  padding-left:12px;
+ margin: 12px 8px 11px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+ 
+}
+#equal{
+	 display: inline-block;
+  border: 1px solid #ddd;
+
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  padding-left:12px;
+ margin: 12px 8px 11px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+ 
+}
+.number{
+	margin-left:12px;
+}
+
+#keys:hover{
+	background-color:#C66;
+	font-weight:bold;
+	
+}
+#keys:active {
+  font-weight: bold;
+
+}
+#equal:hover{
+	background-color:#C66;
+	font-weight:bold;
+	
+}
+
+
+#equal:active {
+  font-weight: bold;
+
+}
+.result{
+	height:70px
+	}
+
+
+
