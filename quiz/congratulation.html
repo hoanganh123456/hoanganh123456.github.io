@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chúc mừng</title>
+<script src="congratulation.js"></script>     
+<style>
+body{
+  background:black;
+  overflow:hidden;
+  margin:0;
+}
+canvas{
+  background:#000;
+}
+@keyframes change{
+	0%{
+		color:#F00;
+	}
+	25%{
+		color:#C33;
+	}
+	50%{
+		color:#906;
+	}
+	75%{
+		color:#99F;
+	}
+	100%{
+		color:#F3F;
+	}
+}
+h1{
+	color:#F00;
+	text-align:center;
+	font-size:80px;
+	animation:change 2s infinite;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>Chúc mừng bạn đã chiến thắng</h1>
+<canvas id="canvas"></canvas>
+</div>
+ 
+</body>
+</html>

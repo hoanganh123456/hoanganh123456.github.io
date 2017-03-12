@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#9F9;
+}
+.grip{
+	width:600px;
+	height:500px;
+	margin:0 auto;
+	background-color:#FFF;
+	padding:10px 50px 50px 50px;
+	border-radius:50px;
+	border:2px solid #CCC;
+	box-shadow:10px 15px 5px #9999CC;
+}
+#score{
+	color:#F36;
+	text-align:center;
+	margin-bottom:40px;
+}
+#button{
+	text-align:center;
+	color:#F00;
+	width: 126px;
+    margin-left: 240px;
+    padding: 15px;
+	font-weight:bold;
+	font-size:20px;
+	background-color:#CC6;
+	border-radius:20px;
+	text-decoration:none;
+	margin-top:20px;
+}
+#button:hover{
+	background-color:#F9C;
+}
+#button:focus{
+	border:none;
+}
+.grip h1{
+	font-family:Verdana, Geneva, sans-serif;
+	background-color:#F99;
+	font-size:60px;
+	text-align:center;
+	color:#ffffff;
+	padding:2px 0px;
+	border-radius:50px;
+}
+.grip #question{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:30px;
+	color:#F33;
+}
+.button{
+	margin-top:30px;
+}
+#btn0,#btn1,#btn2,#btn3{
+	background-color:#F90;
+	width:250px;
+	font-size:20px;
+	color:#FFF;
+	border:1px solid #C9F;
+	border-radius:50px;
+	margin:10px 40px 10px 0px;
+	padding:10px 10px;
+}
+#progress{
+	color:#96F;
+	font-size:18px;
+}
+#btn0:hover,#btn1:hover,#btn2:hover,#btn3:hover{
+	cursor:pointer;
+	background-color:#CCC;
+}
+#btn0:focus,#btn1:focus,#btn2:focus,#btn3:focus{
+	outline:0;
+}
