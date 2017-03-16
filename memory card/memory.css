@@ -14,7 +14,7 @@
 	
 }
 body{
-	background:url(img/background.jpg) repeat-x  ;
+	background:url(img/background.jpg) no-repeat center fixed  ;
 }
 .card {
 	max-width: 25%;
