@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.wrap{
+	position:relative;
+	margin:0 auto;
+	max-width:1020px;
+	max-height:500px;
+	
+}
+body{
+	background:url(img/background.jpg) repeat-x  ;
+}
+.card {
+	max-width: 25%;
+	display:inline-block;
+	position: relative;
+	text-align: center;
+}
+.card img{
+	max-width:90%;
+	border:thick solid #111848;
+	margin-top:20px;
+}
+.card .front {
+	position: absolute;
+	top:0px;
+	left:0px;
+	transform: rotateY(180deg);
+}
+.card .front, .card .back {
+	transition: all 0.5s;
+	backface-visibility: hidden;
+}
+/*.card .back:hover {
+	transform: scale(1.07);
+}*/
+.card.flipped .front{
+	transform: rotateY(0deg);
+}
+.card.flipped .back {
+	transform: rotateY(180deg);
+}
