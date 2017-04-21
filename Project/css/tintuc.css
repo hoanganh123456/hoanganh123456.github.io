@@ -1,0 +1,57 @@
+.col-right li{
+	margin-left: -37px;
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+.style_image{
+	width: 100px;
+}
+.style_image img{
+	margin-right: 15px;
+    height: 63px;
+    float: left;
+    width: 100%;
+}
+.style_infor{
+    font-size: 18px;
+    
+}
+.col-right h2{ background-color: #999;
+    color: #fff;
+    padding: 10px;}
+.page-header{
+    width: 135px;
+    margin-top: 22px;
+    background-color: #666;
+    padding: 5px;
+    color: #fff;}
+.khuyen_mai a{
+	color: black;
+	text-decoration: none;
+}
+.khuyen_mai a:hover{
+	color:#336699 ;
+	text-decoration: none;
+}
+.danh_gia a{
+	color: black;
+	text-decoration: none;
+}
+.danh_gia a:hover{
+	color:#336699;
+	text-decoration: none;
+}
+.thu_thuat a{
+	color: black;
+	text-decoration: none;}
+.thu_thuat a:hover{
+	color:#336699;
+	text-decoration: none;}
+.title_st{
+	color: brown; 
+}
+.title_st:hover{
+	color: #7F5417; 
+	text-decoration: none;
+}
