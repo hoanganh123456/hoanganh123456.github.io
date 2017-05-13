@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+font-family: 'Roboto', sans-serif;
+}
+.owl-prev{
+	position: absolute;
+	top: -39px;
+    right: 5px;
+}
+.owl-next{
+	top: -39px;
+    position: absolute;
+    right: -11px;
+}
+.owl-carousel .owl-item img{
+	width: 100%;
+}
+/*Style phan carousel*/
+.sidebar-product__topseller .sidebar__content{
+	border: 1px solid #ebebeb;
+    border-top: none;
+    border-bottom: none;
+        height: 366px;
+}
+.owl-item{
+	width: 261px;
+}
+.sidebar-product__topseller .product-item__mini{
+	padding: 18px 13px;
+    border-bottom: 1px solid #ebebeb;
+    max-width: 100%;
+}
+.product-item__mini .product-item__thumb{
+	float: left;
+    height: 85px;
+    width: 85px;
+    background: #fff;
+    margin-right: 10px;
+    text-align: center;
+}
+html a{
+	text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.product-item__mini .product-item__thumb img{
+	max-width: 85px;
+    max-height: 85px;
+}
+.sidebar-product__topseller .product-item__content{
+	padding-right: 0;
+}
+.product-item__mini .product-item__title{
+	font-size: 13px;
+    color: #252525;
+    font-family: "Arial";
+    line-height: normal;
+    height: 34px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    font-weight: 400;
+}
+.product-item__title a{
+        font-size: 12px;
+}
+.product-item__price__regular, .product-item__price__special{
+	font-size: 14px;
+    color: #ed1c24;
+    font-family: Arial;
+    line-height: normal;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.product-item__mini{
+	position: relative;
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.product-item__mini .product-item__title a{
+	text-decoration: none;
+}
+.product-item__mini .product-item__title a:hover{
+	text-decoration: none;
+	color: #336699;
+}
+.owl-theme .owl-nav [class*=owl-]{
+	color: #fff;
+	background: none;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+	color: green;
+	background: none;
+}
+.tieude{
+	background: #333;
+	height: 46px;
+}
+.tieude{
+	text-align: center;
+    padding-top: 9px;
+    font-size: 24px;
+}
+.tieude p{
+	margin-left: -19px;
+    color: #fff;
+  
+}

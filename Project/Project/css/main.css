@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+font-family: 'Roboto', sans-serif;}
+body {
+ 
+  
+}
+.flat .plan {
+  border-radius: 6px;
+  list-style: none;
+  padding: 0 0 20px;
+  margin: 0 0 15px;
+  background: #fff;
+  text-align: center;
+}
+.flat .plan li {
+  padding: 10px 15px;
+  color: #ccc;
+  border-top: 1px solid #f5f5f5;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.flat .plan li.plan-price {
+  border-top: 0;
+}
+.flat .plan li.plan-name {
+  border-radius: 6px 6px 0 0;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  background:  #FF9900;
+  margin-bottom: 30px;
+  border-top: 0;
+}
+.flat .plan li > strong {
+  color: #e74c3c;
+}
+.flat .plan li.plan-action {
+  margin-top: 10px;
+  border-top: 0;
+ 
+}
+.flat .plan li.plan-action .btn3 {
+ background:  #FF9900;
+  
+}
+.flat .plan.featured {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.flat .plan.featured li.plan-name {
+  background: #c0392b;
+}
+
+#footer {
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+.menu{
+  margin-top: 71px;
+}
+.btn_plan3{
+  background: #c0392b;
+}
+.flat .plan li.plan-action .btn4 {
+ background:  #AAF200;
+  
+}
+.flat .plan4 li.plan-name  {
+ background:  #AAF200;
+  
+}
+.thong_tin li {
+  list-style-type: none;
+  margin-bottom: 16px;
+    margin-top: 4px;
+}
+.thong_tin ul{ margin-right: 39px;}
+.nx{
+  text-align: center;
+}
+@media screen and (max-width: 320px) {
+  .mobile img{
+    width: 50%;
+  }
+  .mobile_infor{
+  
+    width: 225px;
+    margin-left: -89px;
+  }
+  .form-control{
+    width: 34%;
+  }
+  .thong_tin ul{
+    margin-left: -41px;
+  }
+  .nx{
+    text-align: left ;
+  }
+}
+@media screen and (max-width: 375px){
+  .mobile img{
+    width: 50%;
+  }
+  .mobile_infor{
+  
+    width: 225px;
+    margin-left: -89px;
+  }
+  .form-control{
+    width: 34%;
+  }
+  .thong_tin ul{
+    margin-left: -41px;
+  }
+  .nx{
+    text-align: left ;
+  }
+}
+@media screen and (max-width: 425px){
+  .mobile img{
+    width: 50%;
+  }
+  .mobile_infor{
+  
+    width: 225px;
+    margin-left: -89px;
+  }
+  .form-control{
+    width: 34%;
+  }
+  .thong_tin ul{
+    margin-left: -41px;
+  }
+  .nx{
+    text-align: left ;
+  }
+}

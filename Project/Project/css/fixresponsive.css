@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+ .navbar-fixed-top{
+    width: 779px;}
+    /* .navbar-right{
+    	margin-top: -57px;
+    	margin-right: none;
+    } */
+  }
+@media (max-width: 1024px){
+	.navbar-fixed-top{
+    width: 1054px;}
+}

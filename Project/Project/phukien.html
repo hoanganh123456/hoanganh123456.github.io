@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Danh sách sản phẩm</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
+	<link rel="stylesheet" media="screen"  href="css/ds.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrapValidator.css"/>
+
+	
+	
+
+<body>
+
+
+	<header class="container-fluid">
+		<div class="row info">
+			<div class="hotline col-sm-4 col-xs-8 pull-left">
+				<i class="fa fa-mobile-phone"></i> Hotline: 0943271111
+			</div>
+			<div class="user col-xs-4 pull-right">
+				<i class="fa fa-user-circle-o"></i><span class="hidden-xs"> <a href="#" data-toggle="modal" data-target="#login" >Đăng nhập</a> / <a href="#">Đăng ký</a><span>
+			</div>
+		</div>
+
+
+		<nav id="menu" class="row navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="home.html"><img src="img/Logo.png" alt="logo"></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav nav-pills">
+					<li><a href="home.html"><i class="fa fa-home"></i><p class="hidden-sm">Trang chủ</p></a></li>
+					<li class="dropdown">
+						<a href="danhsachsanpham.html" class="dropdown-toggle" data-toggle="dropdown" role="button">
+							<i class="fa fa-mobile-phone"></i><span class="caret"></span>
+							<p  class="hidden-sm">Điện thoại</p>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="danhsachsanpham.html">iPhone</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="danhsachsanpham.html">Samsung</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="danhsachsanpham.html">Sony</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="danhsachsanpham.html">LG</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="danhsachsanpham.html">HTC</a></li>
+						</ul>
+					</li>
+					<li><a href="phukien.html"><span class="glyphicon glyphicon-headphones"></span><p class="hidden-sm">Phụ kiện</p></a></li>
+					<li><a href="khuyenmai.html" id="rs"><i class="fa fa-gift"></i><p class="hidden-sm">Khuyến mại</p></a></li>
+					<li><a href="lienhe.html"><i class="fa fa-question-circle-o"></i><p class="hidden-sm">Liên hệ</p></a></li>
+					<li><a href="tintuc.html"><i class="fa fa-share-alt"></i><p class="hidden-sm">Chia sẻ</p></a></li>
+
+				</ul>
+				<ul class="nav navbar-nav nav-pills navbar-right">
+					<li><a href="#"><i class="fa fa-search"></i></a></li>
+					<li class="responsive"><a href="giohang.html"><i class="fa fa-shopping-bag"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+
+	
+	</header>
+	<div class="side-menu">
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="home.html"><i class="fa fa-home"></i></a></li>
+			<li><a href="danhsachsanpham.html"><i class="fa fa-mobile-phone"></i></a></li>
+			<li><a href="phukien.html"><span class="glyphicon glyphicon-headphones"></span></a></li>
+			<li><a href="khuyenmai.html"><i class="fa fa-gift"></i></a></li>
+			<li><a href="lienhe.html"><i class="fa fa-question-circle-o"></i></a></li>
+			<li><a href="tintuc.html"><i class="fa fa-share-alt"></i></a></li>
+			<li><a href="giohang.html"><i class="fa fa-shopping-bag"></i></a></li>
+		</ul>
+	</div>
+
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-3  box-left">
+				
+					<div class="menu">
+						<h2>Nhà sản xuất</h2>
+						 <ul>
+							 <li class="top"><a href="#">Iphone</a></li>
+							 <li><a href="#">Sam Sung</a></li>
+							 <li><a href="#">Nokia</a></li>
+							 <li><a href="#">Asus</a></li>
+                             <li><a href="#">Oppo</a></li>
+						 </ul>
+
+						 <h2>Giá sản phẩm</h2>
+						 <ul>
+							 <li class="top"><a href="#">Dưới 1 triệu</a></li>
+							 <li><a href="#">Từ 1-3 triệu</a></li>
+							 <li><a href="#">Từ 3-7 triệu</a></li>
+							 <li><a href="#">Từ 10-14 triệu</a></li>
+							  <li><a href="#">Từ 20 triệu trở lên</a></li>
+						 </ul>
+                         
+                         <h2>Màu sắc</h2>
+						 <ul >
+							 <li class="top"><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Bạc</a></li>
+							 <li><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Đen</a></li>
+							 <li><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Vàng đồng</a></li>
+							 <li><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Đỏ</a></li>
+						 </ul>
+						
+						<h2>Màn hình</h2>
+						 <ul >
+							 <li class="top"><a href="#" class="color">Dưới 3 inch</a></li>
+							 <li><a href="#" class="color">Từ 3 đến 4 inch</a></li>
+							 <li><a href="#" class="color">Từ 4 đến 5 inch</a></li>
+							 <li><a href="#" class="color">Trên 5 inch</a></li>
+						 </ul>
+
+						 <h2>Hệ điều hành</h2>
+						 <ul >
+							 <li class="top"><a href="#" class="color">IOS</a></li>
+							 <li><a href="#" class="color">Android</a></li>
+							 <li><a href="#" class="color">Windows Phone</a></li>
+							 <li><a href="#" class="color">Hệ điều hành khác</a></li>
+						 </ul>
+
+					</div>
+				
+					<div class="slider_left">
+					<div class="sidebar-product__topseller">
+						
+						<div class="tieude">
+							<p>Sản phẩm mới</p>
+						</div>
+						<div class="sidebar__content clearfix">
+							<div class=" owl-carousel owl-theme">
+									<div class="item">
+												<div class="item">
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/gaytusuong1.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">18.790.000₫</p>
+															</div>
+														</div>
+													</div>
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/pinsacduphong1.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">18.790.000₫</p>
+															</div>
+														</div>
+													</div>
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/taingheapple2.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">18.790.000₫</p>
+															</div>
+														</div>
+													</div>			
+												</div>
+									</div>
+									<div class="item">
+												<div class="item">
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/oplungasus.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">18.790.000₫</p>
+															</div>
+														</div>
+													</div>
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/daycapsac1.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">18.790.000₫</p>
+															</div>
+														</div>
+													</div>
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/gaytusuong2.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">18.790.000₫</p>
+															</div>
+														</div>
+													</div>
+												</div>
+									</div>
+									<div class="item">
+												<div class="item">
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/tai-nghe-bluetooth-allhere-s3020s-12-300x300.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">790.000₫</p>
+															</div>
+														</div>
+													</div>
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/tai-nghe-bluetooth-roman-r552s-11-300x300.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">690.000₫</p>
+															</div>
+														</div>
+													</div>
+													<div class="product-item__mini clearfix">
+														<div class="product-item__thumb">
+															<a href="#"><img src="image/phukien/tai-nghe-bluetooth-roman-r553-1-300x300.jpg"></a>
+														</div>
+														<div class="product-item__content">
+															<h3 class="product-item__title">
+																<a href="#">Điện thoại iPhone 7 32GB</a>
+															</h3>
+															<div class="product-item__price">
+																<p class="product-item__price__regular">590.000₫</p>
+															</div>
+														</div>
+													</div>
+												</div>
+									</div>
+									
+
+
+							</div>
+						</div>
+					</div>
+					</div>
+					
+            </div><!-- /.col-left -->
+			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 box-right ">
+				<!--phần tiêu đề -->
+				 <div class="collection__title">
+				 	<h1><span>Tất cả sản phẩm</span></h1>
+				 </div>
+				 <!--phần content-->
+				 <div class="collection-filter">
+				 	<div class="category-products clearfix">
+				 		<div class="row clearfix">
+				 			<!--san pham 1  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/daycapsac1.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">200.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 2  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/daycapsac2.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">200.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 3  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-right sale"></div>
+										<div class="tag-name-right">Sale!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/gaytusuong1.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">70.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 4  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-right new"></div>
+										<div class="tag-name-right">New!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/gaytusuong2.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">70.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 5  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-right new"></div>
+										<div class="tag-name-right">New!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/oplungasus.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">490.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 6  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/oplungasus2.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">790.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 7  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/pinsacduphong1.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">690.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 8  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/pinsacduphong2.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">790.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 9  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/pinsacduphong3.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">690.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 10  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/taingheapple1.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">100.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 11  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/taingheapple2.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">590.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			<!--san pham 12  -->
+				 			<div class="item col-md-4 col-sm-6 col-xs-12">
+				 				<div class="product-item__grid ">
+					 				<div class="slider">
+					 					<div class="tag tag-left hot"></div>
+										<div class="tag-name-left">Hot!</div>
+					 					<div class="product-item__thumb">
+					 						
+					 						<a href="#"><img src="image/phukien/tainghesony.jpg"></a>
+					 					</div>
+					 					<div class="product-item__content">
+					 						<h3 class="product-item__title">
+					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 						</h3>
+					 						<div class="product-item__price">
+					 							<p class="product-item__price__regular">590.000₫</p>
+					 						</div>
+					 					</div>
+					 					
+						 				<div class="overlay">
+			    									<div class="text">
+				    										<div class="col-md-12 bginfor">
+				    												<h3>Điện thoại iPhone 7 32GB</h3>
+				    												<p>18.790.000₫</p><br>
+					    											<span>Màn hình:5.5",Full HD</span><br>
+					    											<span>HĐH:Android 6.0 (Marshmallow)</span><br>
+					    											<span>CPU:Exynos 7870 8 nhân</span><br>
+					    											<span>RAM:3 GB, ROM:32 GB</span><br>
+					    											<span>Camera:13 MP, Selfie:8 MP</span><br>
+					    											<span>PIN:3300 mAh, SIM:2 SIM</span>
+					    											
+					    									</div>		
+			    									</div>
+
+			    									<div class="info">
+														<div class="separator">
+															<p>
+															<p class="btn-add">
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
+
+															</p>
+															<p class="btn-details">
+																<i class="fa fa-list"></i><a href="chitietsanpham.html">Chi tiết</a>
+															</p>
+															</p>
+														</div>
+													</div>
+			  							</div>
+		  								
+		  							</div>	
+	  								
+				 				</div>
+				 				
+				 			</div>
+				 			
+				 	<!--code thanh phân trang -->
+				 	<div class="padding">
+						<nav aria-label="Page navigation">
+		        				<ul class="pagination" id="pagination">
+									
+		        				</ul>
+		    			</nav>
+										 		
+				 	</div>							
+				 </div>
+				
+			</div><!-- /.col-right -->
+			
+		</div>
+	</section>
+		
+	<footer class="main-footer">
+        <div class="container-fluid">
+        	
+            <!--Subscribe Area-->
+            <div class="subscribe-area">
+            	<div class="subs-box">
+                
+                	<div class="row clearfix">
+                        <h2 class="col-md-6 col-sm-12 col-xs-12 pull-left">Subcribe Our <span>News</span></h2>
+                        
+                        <!--Form Box-->
+                        <div class="form-box col-md-6 col-sm-12 col-xs-12  pull-right">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" placeholder="Enter Email" required>
+                                    <button type="submit"><span class="icon fa fa-paper-plane"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Footer Widget Area-->
+            <div class="footer-widget-area clearfix">
+            
+            	<!--Footer Widget-->
+                <article class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12 " >
+                	<h3>Thông tin</h3>
+                    <div class="widget-content">
+                    	<p><a href="home.html">Trang chủ</a></p>
+                        <p><a href="danhsachsanpham.html">Điện thoại</a></p>
+                        <p><a href="phukien.html">Phụ kiện</a></p>
+                        <p><a href="khuyenmai.html">Khuyến mại</a></p>
+                        <p><a href="lienhe.html">Liên hệ</a></p>
+                    </div>
+                </article>
+                
+                <!--Footer Widget-->
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 ">
+                	<h3>Chính sách</h3>
+                    <div class="widget-content">
+                    	<ul>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Đổi và trả hàng hoá</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Hỗ trợ khách hàng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Vận chuyển miễn phí</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Bảo hành</a></li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <!--Footer Widget-->
+                <article class="footer-widget latest-work col-md-3 col-sm-6 col-xs-12 " >
+                    <h3>Facebook</h3>
+                    <div class="widget-content">
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </article>
+                <!--Footer Widget-->
+                <article class="footer-widget address col-md-3 col-sm-6 col-xs-12 ">
+                	<h3>Address</h3>
+                    <div class="widget-content">
+                    	<ul class="info">
+                        	<li><span class="fa fa-map-marker"></span> &ensp; 169 Ga Đỗ Xá-Thường Tín-Hà Nội</li>
+                            <li><span class="fa fa-phone"></span> &ensp; 0943271111 - 0938969696</li>
+                            <li><span class="fa fa-envelope"></span> &ensp; <a href="mailto:info@companyname.com">thanhquan@gmail.com</a></li>
+                        </ul>
+                        
+                        <div class="social"><a class="img-circle fa fa-facebook-f" href="#"></a> <a class="img-circle fa fa-twitter" href="#"></a> <a class="img-circle fa fa-google-plus" href="#"></a> <a class="img-circle fa fa-linkedin" href="#"></a></div>
+                    </div>
+                </article>
+                
+                
+                
+            </div>
+            
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+        	<div class="auto-container text-center"></div>
+        </div>
+        
+	</footer><!--Main Footer End-->		
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 	<script type="text/javascript" src="js/modul.js"></script>
+    <script src="js/jquery.twbsPagination.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/menudoc.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+
+
+   <!-- Modal -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  		<div class="modal-dialog" role="document">
+  			
+			<div class="modal-content">
+				  <button class="button cart-desktop__close" data-dismiss="modal" aria-label="Close">X</button>
+					<div class="row" id="pwd-container">
+					    <div class="col-md-4"></div>
+					    <div class="modal-body">
+					    	<div class="col-md-12">
+					      	<section class="login-form">
+						        <form method="post" action="#" role="login">
+						         	<h3>Đăng nhập</h3>
+						         	<p>
+						         		Bạn chưa có tài khoản ?
+						         		<a href="#">Đăng ký ngay</a>
+						         	</p>
+						          <input type="email" name="email" placeholder="Email" required class="form-control input-lg" value="" />
+						          
+						          <input type="password" class="form-control input-lg" id="password" placeholder="Password" required="" />
+						          
+						          
+						          <div class="pwstrength_viewport_progress"></div>
+						          <div class="login-popup__recovery">
+						          		<p>
+						          			Quên mật khẩu ? Nhấn vào 
+						          			<a href="#">đây</a>
+						          		</p>
+						          </div>
+						          
+						          
+						          <button type="submit" name="go" class="btn btn-lg btn-primary btn-block login">Sign in</button>
+						           <button type="submit" name="go" class="btn btn-lg btn-primary btn-block facebook">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+						           		<span>Đăng nhập bằng Facebook</span>
+						           		
+						           </button>
+						          
+						          
+						        </form>
+					        
+					       
+					      	</section>  
+					    	</div>
+					    </div>
+					    </div>
+					  
+				 
+				  
+				</div>
+				
+		</div>	
+  </div>
+	<!-- Modal của form đăng ký -->
+	
+	
+</body>
+</html>
