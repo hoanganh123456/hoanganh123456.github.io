@@ -6,7 +6,7 @@ $(function(){
  
     $(document).on( 'scroll', function(){
  
-        if ($(window).scrollTop() > 100) {
+        if ($(window).scrollTop() > 600) {
             $('.scroll-top-wrapper').addClass('show');
         } else {
             $('.scroll-top-wrapper').removeClass('show');
@@ -25,6 +25,23 @@ function scrollToTop() {
 }
 
 });
+
+$(function() {
+
+  $(window).scroll(function() {
+    var x = $(window).scrollTop();
+
+    if (x >= 100) {
+      $("#header-logo").hide();
+    } else {
+      $("#header-logo").show();
+    }
+
+  });
+
+});
+
+ 
 
 
 

@@ -112,3 +112,64 @@ html a{
     color: #fff;
   
 }
+@media (max-width: 800px){
+    .tieude{
+    width: 720px;}
+    .sidebar__content{
+        width: 720px;
+    }
+}
+@media all and (max-width: 768px){
+    .tieude{
+    width: 721px;}
+    .sidebar__content{
+        width: 721px;
+    }
+    .main-item{
+        width: 721px;
+    }
+    .item .product-item__mini .product-item__title a{
+        font-size: 14px;
+    }
+}
+@media(max-width: 425px){
+    .tieude{
+    width: 397px;}
+    .sidebar__content{
+    width: 397px;}
+    .item .product-item__mini .product-item__title a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px){
+       .tieude{
+    width: 346px;}
+    .sidebar__content{
+    width: 346px;}
+    .item .product-item__mini .product-item__title a{
+        font-size: 14px;
+    }
+}
+@media(max-width: 360px){
+     .tieude{
+    width: 311px;}
+    .sidebar__content{
+    width: 311px;}
+}
+@media (min-width: 384px) and (max-width: 414px){
+    .tieude{
+    width: 341px;}
+    .sidebar__content{
+    width: 341px;}
+}
+@media all and  (max-width: 320px){
+    .tieude{
+    width: 290px;}
+    .sidebar__content{
+    width: 290px;}
+     .item .product-item__mini .product-item__title a{
+        font-size: 14px;
+    }
+}
+
+

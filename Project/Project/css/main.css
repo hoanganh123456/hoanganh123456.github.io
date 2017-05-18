@@ -45,12 +45,6 @@ body {
  background:  #FF9900;
   
 }
-.flat .plan.featured {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 .flat .plan.featured li.plan-name {
   background: #c0392b;
 }
@@ -60,14 +54,24 @@ body {
   padding-bottom: 30px;
 }
 .menu{
-  margin-top: 71px;
+  margin-top: 74px;
+}
+.flat .plan1 li > strong{
+  color: black;
 }
 .btn_plan3{
   background: #c0392b;
 }
 .flat .plan li.plan-action .btn4 {
  background:  #AAF200;
-  
+      border: 1px solid green;
+}
+.flat .plan li.plan-action .btn2 {
+      border: 1px solid red;
+}
+.flat .plan li.plan-action .btn3 {
+ 
+      border: 1px solid #CC6600;
 }
 .flat .plan4 li.plan-name  {
  background:  #AAF200;
@@ -138,4 +142,20 @@ body {
   .nx{
     text-align: left ;
   }
+}
+
+@media (min-width:320px ) and (max-width:768px ){
+  .scroll-top-wrapper{
+    right: 4px;
+    bottom: 7px;
+  }
+}
+@media (max-width: 320px){
+  .slider_left{
+        width: 290px;
+  }
+  .scroll-top-wrapper{
+  width: 40px;
+    height: 40px;
+    line-height: 39px;}
 }

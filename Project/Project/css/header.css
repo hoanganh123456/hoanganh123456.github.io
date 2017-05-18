@@ -27,6 +27,17 @@ iframe{
 	color: #d2a637;
 	font-weight: bold;
 }
+#menu a:hover{
+	background: none;
+	color: green;
+	font-weight: bold;
+}
+.dropdown-menu > li > a:hover{
+	color:  green ;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background: none;
+}
 
 .title-bg {
     height: 83px;
@@ -47,6 +58,9 @@ header .info {
 	background-color: #fff;
 	padding: 5px;
 }
+ul.nav.navbar-nav.nav-pills.navbar-right{
+	margin-top: 5px;
+}
 .user {
 	text-align: right;
 }
@@ -54,16 +68,13 @@ header .info {
 	height: auto;
 }
 .navbar-brand img {
+	margin-top: -10px;
 	max-height: 60px;
 }
 .nav-pills > li + li{
 	margin-left: 9px;
 }
-@media (max-width: 768px){
-	.navbar-brand img {
-		max-height: 40px;
-	}
-}
+
 .navbar-nav > li {
 	text-align: center;
 }
@@ -81,7 +92,7 @@ header .info {
 	background-color: rgba(69,69,69,0.6);
 }
 #menu .glyphicon {
-	font-size: 25px;
+	font-size: 27px;
 	padding-bottom: 5px;
 }
 #menu .fa {
@@ -120,6 +131,18 @@ header .info {
 	.responsive{
 		    margin-right: 16px;
 	}
+	.navbar-brand img {
+		max-height: 40px;
+	}
+	#buttonsearch{
+		margin-right: -1px;
+    	margin-top: -7px;
+	}
+	#cart{
+	margin-top: -7px;}
+	.nav-pills > li + li{
+		margin-left: 4px;
+	}
 }
 @media  (min-width: 320px) {
 	.nav .navbar-nav .nav-pills{
@@ -136,7 +159,7 @@ header .info {
 }
 @media (max-width: 425px){
 	 ul.nav.navbar-nav.nav-pills{
-		width: 286px;
+		width: 306.9px;
 	}
 
 }
@@ -153,7 +176,12 @@ header .info {
     	font-size: 26px;
 	}
 }
-
+.navbar-fixed-top .navbar-toggle{
+    margin-right: 27px;
+}
+.navbar-default .navbar-toggle .icon-bar{
+      background-color: #fff;
+}
 
 
 

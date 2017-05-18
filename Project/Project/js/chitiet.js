@@ -43,7 +43,26 @@ $(document).ready(function(){
     nav:true,
     dots:false,
     smartSpeed:450,
-    items:4
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:4,
+            
+        },
+        320:{
+            items:2,
+        },
+        600:{
+            items:3,
+            
+        },
+        1024:{
+            items:3,
+        },
+        1200:{
+            items:4,
+        }
+    }
 
 
   })
@@ -67,6 +86,13 @@ $('.owl-next').html("<span class='glyphicon glyphicon-chevron-right'></span>");
 
     });
 
+ (function(){
+ 
+  $("#cart").on("click", function() {
+    $(".shopping-cart").fadeToggle( "fast");
+  });
+  
+})();
 
 
 

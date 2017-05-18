@@ -452,13 +452,15 @@ ul,li{
     margin-left: 37px;
     margin-top: 5px;
 }
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
 		.main-footer .subscribe-area .form-group{
 			    right: 8px;
 		}
+		article.footer-widget.address.col-md-3.col-sm-6.col-xs-12{
+			margin-top: 0;
+		}
 }
-@media (max-width: 768px){
-	article.footer-widget.address.col-md-3.col-sm-6.col-xs-12 {
-    margin-top: -66px;
-}
+@media screen and (max-width: 768px){
+	.address{ 
+      margin-top: -197px;
 }

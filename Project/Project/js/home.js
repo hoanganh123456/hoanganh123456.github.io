@@ -108,3 +108,12 @@ function checkY(){
         $('#menu').removeClass('navbar-fixed-top');
     }
 }
+
+ (function(){
+ 
+  $("#cart").on("click", function() {
+    $(".shopping-cart").fadeToggle( "fast");
+  });
+  
+})();
+

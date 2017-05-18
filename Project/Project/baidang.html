@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.html"><img src="img/Logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="home.html"><img src="img/Logo.png" alt="logo" id="header-logo"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -74,18 +74,68 @@
                     <li><a href="phukien.html"><span class="glyphicon glyphicon-headphones"></span><p class="hidden-sm">Phụ kiện</p></a></li>
                     <li><a href="khuyenmai.html" id="rs"><i class="fa fa-gift"></i><p class="hidden-sm">Khuyến mại</p></a></li>
                     <li><a href="lienhe.html"><i class="fa fa-question-circle-o"></i><p class="hidden-sm">Liên hệ</p></a></li>
-                    <li><a href="tintuc.html"><i class="fa fa-share-alt"></i><p class="hidden-sm">Chia sẻ</p></a></li>
+                    <li><a href="tintuc.html"><i class="fa fa-newspaper-o"></i><p class="hidden-sm">Tin tức</p></a></li>
 
                 </ul>
                 <ul class="nav navbar-nav nav-pills navbar-right">
                     <li><a href="#"><i class="fa fa-search"></i></a></li>
-                    <li class="responsive"><a href="giohang.html"><i class="fa fa-shopping-bag"></i></a></li>
+                   <li class="responsive"><a href="#" id="cart"><i class="fa fa-shopping-bag"></i><span class="badge">3</span></a></li>
                 </ul>
             </div>
         </nav>
 
+        <!-- shopping gio hang -->
+    <div class="shopping-cart">
+                        <div class="shopping-cart-header">
+      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+      <div class="shopping-cart-total">
+        <span class="lighter-text">Total:</span>
+        <span class="main-color-text">20.000.000₫</span>
+      </div>
+                        </div> <!--end shopping-cart-header -->
+
+                        <ul class="shopping-cart-items">
+      <li class="clearfix">
+        <img src="image/iphone/iphone-6-plus-16gb-14-300x300.jpg" />
+        <span class="item-name">Điện thoại iPhone 7 32GB</span>
+        <span class="item-price">10.000.000₫</span>
+        <span class="item-quantity">Số lượng: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="image/samsung/samsung-galaxy-a9-pro-300x300.jpg" />
+        <span class="item-name">Điện thoại iPhone 7 32GB</span>
+        <span class="item-price">10.000.000₫</span>
+        <span class="item-quantity">Số lượng: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="image/oppo/oppo-a39-300x300.jpg" />
+        <span class="item-name">Điện thoại iPhone 7 32GB</span>
+        <span class="item-price">10.000.000₫</span>
+        <span class="item-quantity">Số lượng: 01</span>
+      </li>
+                        </ul>
+
+                    <a href="giohang.html" class="button_checkout">Mua hàng</a>
+                    </div>
+
+
     
     </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <ol class="breadcrumb">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                     <li><a href="baidang.html" class="active">Bài viết</a></li>
+                    
+                </ol>
+            </div>
+        </div>
+    </section>
+    
     <div class="side-menu">
         <ul class="nav nav-pills nav-stacked">
             <li><a href="home.html"><i class="fa fa-home"></i></a></li>
@@ -446,7 +496,7 @@
                     <div class="widget-content">
                         <ul>
                             <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Đổi và trả hàng hoá</a></li>
-                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Hỗ trợ khách hàng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Nội quy cửa hàng</a></li>
                             <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Hàng hoá chính hãng</a></li>
                             <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Vận chuyển miễn phí</a></li>
                             <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Bảo hành</a></li>
@@ -455,16 +505,20 @@
                 </article>
                 
                 <!--Footer Widget-->
-                <article class="footer-widget latest-work col-md-3 col-sm-6 col-xs-12 " >
-                    <h3>Facebook</h3>
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 " >
+                    <h3>Hỗ trợ khách hàng</h3>
                     <div class="widget-content">
-                        <div class="clearfix">
-                        </div>
+                        <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Giải quyết khiếu nại</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Kiểm tra hàng Apple chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hướng dẫn mua trả góp</a></li>
+                        </ul>
                     </div>
                 </article>
                 <!--Footer Widget-->
                 <article class="footer-widget address col-md-3 col-sm-6 col-xs-12 ">
-                    <h3>Address</h3>
+                    <h3>Địa chỉ</h3>
                     <div class="widget-content">
                         <ul class="info">
                             <li><span class="fa fa-map-marker"></span> &ensp; 169 Ga Đỗ Xá-Thường Tín-Hà Nội</li>

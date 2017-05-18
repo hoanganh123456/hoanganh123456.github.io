@@ -69,6 +69,15 @@ font-family: 'Roboto', sans-serif;
     font-family: "Arial";
     color:  #FF0000;
  }
+ .breadcrumb{
+  margin-top: 2px;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 26px;
+}
+.breadcrumb .active{
+  color: #336699;
+}
   .cart-desktop__tfooter-continue ,.cart-desktop__tfooter-checkout{
 float: left;
     background: #FF9900;
@@ -235,6 +244,14 @@ margin-top: 17px;
 .cart-desktop__thead{
         height: 220px;
 
+}
+
+button.btn.btn-primary.btn-lg.btn-block{
+        margin-bottom: 12px;
+
+}
+button.btn.btn-lg.btn-block.btn1{
+    background: #336600;
 }
 
 

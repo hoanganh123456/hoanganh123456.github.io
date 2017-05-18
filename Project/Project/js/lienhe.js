@@ -57,5 +57,15 @@ function checkY(){
    
 
 }
+
+//giỏ hàng
+ (function(){
+ 
+  $("#cart").on("click", function() {
+    $(".shopping-cart").fadeToggle( "fast");
+  });
+  
+})();
+
   
  
