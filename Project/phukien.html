@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Danh sách sản phẩm</title>
+	<title>Phụ kiện</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
@@ -26,7 +26,7 @@
 				<i class="fa fa-mobile-phone"></i> Hotline: 0943271111
 			</div>
 			<div class="user col-xs-4 pull-right">
-				<i class="fa fa-user-circle-o" data-toggle="modal" data-target="#login"></i><span class="hidden-xs"> <a href="#" data-toggle="modal" data-target="#login" >Đăng nhập</a> / <a href="#" data-toggle="modal" data-target="#sign">Đăng ký</a><span>
+				<i class="fa fa-user-circle-o"></i><span class="hidden-xs"> <a href="#" data-toggle="modal" data-target="#login" >Đăng nhập</a> / <a href="#" data-toggle="modal" data-target="#sign">Đăng ký</a><span>
 			</div>
 		</div>
 		
@@ -39,7 +39,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="home.html"><img src="img/Logo.png" alt="logo" id="header-logo"></a>
+				<a class="navbar-brand" href="home.html"><img src="img/Logo.png" alt="logo" id="header-logo"s></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -69,37 +69,27 @@
 
 				</ul>
 				<ul class="nav navbar-nav nav-pills navbar-right shop">
-					<li><a href="#" class="buttonsearch" id="buttonsearch"><i class="fa fa-search"></i></a></li>
-					<li></li>
-					
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                   <li class="responsive"><a href="#" id="cart"><i class="fa fa-shopping-bag"></i><span class="badge">3</span></a></li>
+                </ul>
 
-					<li class="responsive"><a href="#" id="cart"><i class="fa fa-shopping-bag"></i><span class="badge">3</span></a></li>
-					
-					
-				</ul>
+                <!-- responsive menu -->
+                <ul class="nav navbar-nav nav-pills navbar-right mobile-shop">
+                    <li><a href="#" class="buttonsearch" id="buttonsearch"><i class="fa fa-search"></i></a></li>
+                    <li></li>
+                    
 
-				<!-- responsive menu -->
-				<ul class="nav navbar-nav nav-pills navbar-right mobile-shop">
-					<li><a href="#" class="buttonsearch" id="buttonsearch"><i class="fa fa-search"></i></a></li>
-					<li></li>
-					
-
-					<li class="responsive"><a href="giohang.html" id="cart"><i class="fa fa-shopping-bag"></i><span class="badge">3</span></a></li>
-					
-					
-				</ul>
-				<!-- end responsive -->
-				
-
+                    <li class="responsive"><a href="giohang.html" id="cart"><i class="fa fa-shopping-bag"></i><span class="badge">3</span></a></li>
+                    
+                    
+                </ul>
+                <!-- end responsive -->
 			</div>
 
 
 
 		</nav>
 
-		
-
-		
 
 		<div class="row search_bar">
 			 <div class="container searchbardiv" id="formsearch">
@@ -176,9 +166,9 @@
 	<section class="container">
 		<div class="row">
 			
-				<ol class="breadcrumb">
+				<ol class="breadcrumb" style="margin-bottom: -57px;">
   					<li><a href="home.html">Home</a></li>
-  					<li><a href="danhsachsanpham.html" class="active">San pham</a></li>
+  					<li><a href="danhsachsanpham.html" class="active">Phụ kiện</a></li>
   					
 				</ol>
 		
@@ -186,7 +176,7 @@
 	</section>
 	
 	<section class="container">
-		<div class="row main-wrap">
+		<div class="row">
 			<div class="col-sm-12 col-md-3  box-left">
 				
 					<div class="menu">
@@ -209,30 +199,26 @@
 						 </ul>
                          
                          <h2>Màu sắc</h2>
-						 <ul class="choose_color">
+						 <ul >
 							 <li class="top"><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Bạc</a></li>
 							 <li><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Đen</a></li>
 							 <li><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Vàng đồng</a></li>
 							 <li><span class="checkbox"><input type="checkbox"></span><a href="#" class="color">Đỏ</a></li>
 						 </ul>
 						
-						<h2>Màn hình</h2>
-						 <ul >
-							 <li class="top"><a href="#" class="color">Dưới 3 inch</a></li>
-							 <li><a href="#" class="color">Từ 3 đến 4 inch</a></li>
-							 <li><a href="#" class="color">Từ 4 đến 5 inch</a></li>
-							 <li><a href="#" class="color">Trên 5 inch</a></li>
-						 </ul>
+						
 
-						 <h2>Hệ điều hành</h2>
+						 <h2>Loại</h2>
 						 <ul >
-							 <li class="top"><a href="#" class="color">IOS</a></li>
-							 <li><a href="#" class="color">Android</a></li>
-							 <li><a href="#" class="color">Windows Phone</a></li>
-							 <li><a href="#" class="color">Hệ điều hành khác</a></li>
+							 <li class="top"><a href="#" class="color">Ốp lưng</a></li>
+							 <li><a href="#" class="color">Sạc dự phòng</a></li>
+							 <li><a href="#" class="color">Tai nghe</a></li>
+							 <li><a href="#" class="color">Gậy tự sướng</a></li>
+							  <li><a href="#" class="color">Sản phẩm khác</a></li>
 						 </ul>
 
 					</div>
+
 					<!-- Style menu left mobile -->
 					<div class="menu-mobile">
 						<h2>Lọc sản phẩm</h2>
@@ -315,129 +301,129 @@
 						<div class="sidebar__content clearfix">
 							<div class=" owl-carousel owl-theme">
 									<div class="item">
-												<div class="main-item">
+												<div class="item">
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/iphone/iphone-6-32gb-vang-300-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/gaytusuong1.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại iPhone 6 32GB</a>
+																<a href="#">Gậy chụp ảnh Osmia OW1</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">10.790.000₫</p>
+																<p class="product-item__price__regular">590.000₫</p>
 															</div>
 														</div>
 													</div>
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/oppo/oppo-a39-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/pinsacduphong1.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại Oppo A39</a>
+																<a href="#">eSaver 5.000 mAh Y322</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">10.790.000₫</p>
+																<p class="product-item__price__regular">690.000₫</p>
 															</div>
 														</div>
 													</div>
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/sony/sony-xperia-z5-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/taingheapple2.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại Sony xperia z5</a>
+																<a href="#">Tai nghe chụp tai Kanen IP-892</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">8.790.000₫</p>
+																<p class="product-item__price__regular">599.000₫</p>
 															</div>
 														</div>
 													</div>			
 												</div>
 									</div>
 									<div class="item">
-												<div class="main-item">
+												<div class="item">
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/iphone/iphone-se-16gb-2-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/oplungasus.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại iPhone SE 16gb</a>
+																<a href="#">Ốp lưng Asus</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">18.790.000₫</p>
+																<p class="product-item__price__regular">490.000₫</p>
 															</div>
 														</div>
 													</div>
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/oppo/oppo-neo-7-17-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/daycapsac1.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại Oppo Neo 7</a>
+																<a href="#">Dây cáp USB 0.2 m Xmobile</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">18.790.000₫</p>
+																<p class="product-item__price__regular">200.000₫</p>
 															</div>
 														</div>
 													</div>
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/sony/sony-xperia-z5-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/gaytusuong2.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại Sony xperia z</a>
+																<a href="#">Gậy chụp ảnh Osmia OW5</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">10.790.000₫</p>
+																<p class="product-item__price__regular">70.000₫</p>
 															</div>
 														</div>
 													</div>
 												</div>
 									</div>
 									<div class="item">
-												<div class="main-item">
+												<div class="item">
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/iphone/iphone-5s-16gb-13-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/tai-nghe-bluetooth-allhere-s3020s-12-300x300.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại iPhone 5s 16GB</a>
+																<a href="#">Tai nghe Bluetooth Roman R553</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">10.790.000₫</p>
+																<p class="product-item__price__regular">250.000₫</p>
 															</div>
 														</div>
 													</div>
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/sony/sony-xperia-xz-10-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/tai-nghe-bluetooth-roman-r552s-11-300x300.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại Sony xperia </a>
+																<a href="#">Tai nghe Bluetooth Roman R552S</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">18.790.000₫</p>
+																<p class="product-item__price__regular">200.000₫</p>
 															</div>
 														</div>
 													</div>
 													<div class="product-item__mini clearfix">
 														<div class="product-item__thumb">
-															<a href="#"><img src="image/oppo/oppo-a37-pp-300x300.jpg"></a>
+															<a href="#"><img src="image/phukien/tai-nghe-bluetooth-roman-r553-1-300x300.jpg"></a>
 														</div>
 														<div class="product-item__content">
 															<h3 class="product-item__title">
-																<a href="chitietsanpham.html">Điện thoại Oppo A37</a>
+																<a href="#">Điện thoại iPhone 7 32GB</a>
 															</h3>
 															<div class="product-item__price">
-																<p class="product-item__price__regular">10.790.000₫</p>
+																<p class="product-item__price__regular">590.000₫</p>
 															</div>
 														</div>
 													</div>
@@ -452,7 +438,6 @@
 					</div>
 					
             </div><!-- /.col-left -->
-            
 			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 box-right ">
 				<!--phần tiêu đề -->
 				 <div class="collection__title">
@@ -470,14 +455,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/iphone/iphone-se-16gb-2-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/daycapsac1.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#"> Điện thoại iPhone SE 64GB</a>
+					 							<a href="#">Dây cáp USB 0.2 m Xmobile </a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">11.990.000₫</p>
+					 							<p class="product-item__price__regular">200.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -500,7 +485,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -524,14 +509,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/iphone/iphone-5s-16gb-13-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/daycapsac2.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 							<a href="#">Dây cáp USB 0.5 m Xmobile</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">200.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -554,7 +539,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -578,14 +563,14 @@
 										<div class="tag-name-right">Sale!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/iphone/iphone-7-red-128gb-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/gaytusuong1.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại iPhone 7 128GB</a>
+					 							<a href="#">Gậy chụp ảnh Osmia OW1</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">70.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -608,7 +593,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -632,14 +617,14 @@
 										<div class="tag-name-right">New!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/iphone/iphone-6-32gb-vang-300-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/gaytusuong2.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại iPhone 7 32GB</a>
+					 							<a href="#">Gậy chụp ảnh Osmia OW5</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">70.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -662,7 +647,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -686,14 +671,14 @@
 										<div class="tag-name-right">New!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/oppo/oppo-a37-pp-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/oplungasus.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại OPPO A37 (NEO 9)</a>
+					 							<a href="#">Ốp lưng Asus</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">490.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -716,7 +701,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -740,14 +725,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/oppo/oppo-a39-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/oplungasus2.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại OPPO A39 (Neo 9s)</a>
+					 							<a href="#">Ốp lưng Galaxy </a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">790.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -770,7 +755,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -794,14 +779,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/oppo/oppo-neo-7-17-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/pinsacduphong1.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại iPhone Neo 7</a>
+					 							<a href="#">eSaver 5.000 mAh Y322</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">690.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -824,7 +809,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -848,14 +833,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/oppo/oppo-neo-7s-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/pinsacduphong2.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại Neo 7s</a>
+					 							<a href="#">Eco 7.500 mAh Y39A</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">790.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -878,7 +863,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -902,14 +887,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/samsung/samsung-galaxy-a9-pro-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/pinsacduphong3.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại sam sung galaxy A9</a>
+					 							<a href="#">Eco Polymer 10.000 mAh J210</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">690.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -932,7 +917,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -956,14 +941,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/samsung/samsung-galaxy-s7-edge-pink-gold-edition-pp-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/taingheapple1.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại Samsung Galaxy S7 </a>
+					 							<a href="#">Tai nghe iphone</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">100.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -986,7 +971,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -1010,14 +995,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/sony/sony-xperia-xz-10-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/taingheapple2.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại Sony xperia z</a>
+					 							<a href="#">Tai nghe chụp tai Kanen IP-892</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">590.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -1040,7 +1025,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -1064,14 +1049,14 @@
 										<div class="tag-name-left">Hot!</div>
 					 					<div class="product-item__thumb">
 					 						
-					 						<a href="#"><img src="image/sony/sony-xperia-z5-300x300.jpg"></a>
+					 						<a href="#"><img src="image/phukien/tainghesony.jpg"></a>
 					 					</div>
 					 					<div class="product-item__content">
 					 						<h3 class="product-item__title">
-					 							<a href="#">Điện thoại Sony xperia z5</a>
+					 							<a href="#">Tai nghe chụp tai Sony MDR - ZX110AP</a>
 					 						</h3>
 					 						<div class="product-item__price">
-					 							<p class="product-item__price__regular">18.790.000₫</p>
+					 							<p class="product-item__price__regular">590.000₫</p>
 					 						</div>
 					 					</div>
 					 					
@@ -1094,7 +1079,7 @@
 														<div class="separator">
 															<p>
 															<p class="btn-add">
-																<i class="fa fa-shopping-cart"></i><a href="giohang.html">Mua hàng</a>
+																<i class="fa fa-shopping-cart"></i><a href="#">Mua hàng</a>
 
 															</p>
 															<p class="btn-details">
@@ -1111,6 +1096,7 @@
 				 				
 				 			</div>
 				 			
+				 
 				 	<!--code thanh phân trang -->
 				 	<div aria-label="Page navigation" class="phantrang">
   						<ul class="pagination">
@@ -1133,7 +1119,7 @@
 					</div>
 						
 
-				 	<!-- het phan trang  -->
+				 	<!-- het phan trang  -->						
 				 </div>
 				
 			</div><!-- /.col-right -->
@@ -1222,6 +1208,7 @@
                 </article>
                 
                 
+                
             </div>
             
         </div>
@@ -1239,8 +1226,6 @@
  		</span>
 	</div>
 	<!-- end back to stop -->
-
-
 	<script src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
  	<script type="text/javascript" src="js/modul.js"></script>

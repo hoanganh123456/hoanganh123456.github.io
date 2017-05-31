@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('font-awesome.css');
 @import url('flaticon.css');
 @import url('animate.css');
 @import url('hover.css');
-
 
 /*** 
 
@@ -12,6 +12,7 @@
 
  ***/
 * {
+	
 	margin:0px;
 	padding:0px;
 	border:none;
@@ -27,12 +28,12 @@
  ***/
 
 body {
-	font-family: 'Hind', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size:14px;
 	color:#505050;
 	line-height:1.6em;
 	font-weight:400;
-	background:#f9f9f9;
+	
 }
 
 a{
@@ -49,14 +50,14 @@ a:hover,a:focus,a:visited{
 
 h1,h2,h3,h4,h5,h6 {
 	position:relative;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight:normal;
 	margin:0px;
 	background:none;
 }
 
 input,button,select,textarea{
-	font-family: 'Hind', sans-serif;	
+	font-family: 'Roboto', sans-serif;
 }
 
 /*::-webkit-input-placeholder { color:rgba(0,0,0,0.80);}
@@ -84,7 +85,7 @@ p{
 .page-wrapper{
 	position:relative;
 	margin:0 auto;
-	width:100%;
+	width:87%;
 	min-width:300px;
 	min-height:400px;
 	overflow:hidden;
@@ -175,7 +176,7 @@ ul,li{
 	margin-bottom:5px;
 	color:#ffffff;
 	text-transform:uppercase;
-	font-family:'Hind',sans-serif;
+	font-family: 'Roboto', sans-serif;
 	transition:all 0.5s ease;
 	-moz-transition:all 0.5s ease;
 	-webkit-transition:all 0.5s ease;
@@ -193,7 +194,7 @@ ul,li{
 	margin-bottom:5px;
 	color:#ffffff;
 	text-transform:uppercase;
-	font-family:'Hind',sans-serif;
+	font-family: 'Roboto', sans-serif;
 	transition:all 0.5s ease;
 	-moz-transition:all 0.5s ease;
 	-webkit-transition:all 0.5s ease;
@@ -340,14 +341,14 @@ ul,li{
 	position:relative;
 	font-size:16px;
 	color:#202e31;
-	font-family:'Hind', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight:600;
 	margin-bottom:10px;
 }
 
 .info-strip .info-block p,
 .info-strip .info-block a{
-	color:#336699;
+	color:#fff;
 	margin:0px;
 	font-size:14px;
 }
@@ -474,5 +475,170 @@ ul,li{
   #menu .dropdown-menu{
   	margin-left: 7px;
   }
+}
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+    background-color: #777777;
+  color: #eeeeee;
+  width: 50px;
+  height: 48px;
+  line-height: 48px;
+  right: 30px;
+  bottom: 30px;
+  padding-top: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+  background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+  opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+  line-height: inherit;
+}
+
+
+.breadcrumb{
+  margin-top: 1px;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 32px;
+}
+.breadcrumb .active{
+  color: #336699;
+}
+
+/* shop tottip */
+.badge {
+      margin-top: -25px;
+  background-color: #336698;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.shopping-cart {
+  margin: 20px 0;
+  float: right;
+  background: white;
+  width: 320px;
+  position: absolute;
+  border-radius: 3px;
+  padding: 20px;
+  display: none;
+  top: 71px;
+  right: 23px;
+      z-index: 10000000000;
+}
+.shopping-cart .shopping-cart-header {
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 15px;
+}
+.shopping-cart .shopping-cart-header .shopping-cart-total {
+  float: right;
+}
+.shopping-cart .shopping-cart-items {
+  padding-top: 20px;
+}
+.shopping-cart .shopping-cart-items li {
+  margin-bottom: 18px;
+}
+.shopping-cart .shopping-cart-items img {
+  float: left;
+  margin-right: 12px;
+  width: 22%;
+}
+.shopping-cart .shopping-cart-items .item-name {
+  display: block;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.shopping-cart .shopping-cart-items .item-price {
+  color: #6394F8;
+  margin-right: 8px;
+}
+.shopping-cart .shopping-cart-items .item-quantity {
+  color: #ABB0BE;
+}
+
+.shopping-cart:after {
+  bottom: 100%;
+  left: 89%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.cart-icon {
+  color: #515783;
+  font-size: 24px;
+  margin-right: 7px;
+  float: left;
+}
+
+.button_checkout {
+  background: #2C6700;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 25px 0 15px 0;
+}
+.button:hover {
+  background: #821122;
+  color: #FCFCFC;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width:320px ) and (max-width:768px ){
+	.scroll-top-wrapper{
+    right: 4px;
+    bottom: 7px;
+  }
+}
+@media (max-width: 320px){
+  .slider_left{
+        width: 290px;
+  }
+  .scroll-top-wrapper{
+  width: 40px;
+    height: 40px;
+    line-height: 39px;}
 }
 

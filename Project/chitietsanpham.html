@@ -2,134 +2,285 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chi tiết sản phẩm</title>
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="dist/jquery.bxslider.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/chitiet.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.css">
-
-	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/ds.css">
+	<link href="css/footer.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	
+	
 </head>	
 <body>
 	
 		<header class="container-fluid">
-			<div class="row info">
+		<div class="row info">
 			<div class="hotline col-sm-4 col-xs-8 pull-left">
 				<i class="fa fa-mobile-phone"></i> Hotline: 0943271111
 			</div>
 			<div class="user col-xs-4 pull-right">
-				<i class="fa fa-user-circle-o"></i><span class="hidden-xs"> Đăng nhập / Đăng ký<span>
+				<i class="fa fa-user-circle-o"></i><span class="hidden-xs"> <a href="#" data-toggle="modal" data-target="#login" >Đăng nhập</a> / <a href="#">Đăng ký</a><span>
 			</div>
-			</div>
-		
-			<nav id="menu" class="row navbar navbar-default">
-				<div class="navbar-header">
+		</div>
+
+
+		<nav id="menu" class="row navbar navbar-default">
+			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="img/Logo.png" alt="logo"></a>
-				</div>
+				<a class="navbar-brand" href="home.html"><img src="img/Logo.png" alt="logo"></a>
+			</div>
 
-				<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav nav-pills">
-					<li><a href="#"><i class="fa fa-home"></i><p class="hidden-sm">Trang chủ</p></a></li>
+					<li><a href="home.html"><i class="fa fa-home"></i><p class="hidden-sm">Trang chủ</p></a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+						<a href="danhsachsanpham.html" class="dropdown-toggle" data-toggle="dropdown" role="button">
 							<i class="fa fa-mobile-phone"></i><span class="caret"></span>
 							<p  class="hidden-sm">Điện thoại</p>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">iPhone</a></li>
+							<li><a href="danhsachsanpham.html">iPhone</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#">Samsung</a></li>
+							<li><a href="danhsachsanpham.html">Samsung</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#">Sony</a></li>
+							<li><a href="danhsachsanpham.html">Sony</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#">LG</a></li>
+							<li><a href="danhsachsanpham.html">LG</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#">HTC</a></li>
+							<li><a href="danhsachsanpham.html">HTC</a></li>
 						</ul>
 					</li>
-					<li><a href="#"><span class="glyphicon glyphicon-headphones"></span><p class="hidden-sm">Phụ kiện</p></a></li>
-					<li><a href="#"><i class="fa fa-gift"></i><p class="hidden-sm">Khuyến mại</p></a></li>
-					<li><a href="#"><i class="fa fa-question-circle-o"></i><p class="hidden-sm">Liên hệ</p></a></li>
-					<li><a href="#"><i class="fa fa-share-alt"></i><p class="hidden-sm">Chia sẻ</p></a></li>
+					<li><a href="phukien.html"><span class="glyphicon glyphicon-headphones"></span><p class="hidden-sm">Phụ kiện</p></a></li>
+					<li><a href="khuyenmai.html" id="rs"><i class="fa fa-gift"></i><p class="hidden-sm">Khuyến mại</p></a></li>
+					<li><a href="lienhe.html"><i class="fa fa-question-circle-o"></i><p class="hidden-sm">Liên hệ</p></a></li>
+					<li><a href="tintuc.html"><i class="fa fa-newspaper-o"></i><p class="hidden-sm">Tin tức</p></a></li>
 
 				</ul>
-				<ul class="nav navbar-nav nav-pills navbar-right">
-					<li><a href="#"><i class="fa fa-search"></i></a></li>
-					<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-					<li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
-				</ul>
-				</div>
-			</nav>
-		</header>
-		
+				<ul class="nav navbar-nav nav-pills navbar-right shop">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                   <li class="responsive"><a href="#" id="cart"><i class="fa fa-shopping-bag"></i><span class="badge">3</span></a></li>
+                </ul>
+
+                <!-- responsive menu -->
+                <ul class="nav navbar-nav nav-pills navbar-right mobile-shop">
+                    <li><a href="#" class="buttonsearch" id="buttonsearch"><i class="fa fa-search"></i></a></li>
+                    <li></li>
+                    
+
+                    <li class="responsive"><a href="giohang.html" id="cart"><i class="fa fa-shopping-bag"></i><span class="badge">3</span></a></li>
+                    
+                    
+                </ul>
+                <!-- end responsive -->
+			</div>
+		</nav>
+
+		<div class="shopping-cart">
+   					 	<div class="shopping-cart-header">
+      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+      <div class="shopping-cart-total">
+        <span class="lighter-text">Total:</span>
+        <span class="main-color-text">20.000.000₫</span>
+      </div>
+    					</div> <!--end shopping-cart-header -->
+
+    					<ul class="shopping-cart-items">
+      <li class="clearfix">
+        <img src="image/iphone/iphone-6-plus-16gb-14-300x300.jpg" />
+        <span class="item-name">Điện thoại iPhone 7 32GB</span>
+        <span class="item-price">10.000.000₫</span>
+        <span class="item-quantity">Số lượng: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="image/samsung/samsung-galaxy-a9-pro-300x300.jpg" />
+        <span class="item-name">Điện thoại iPhone 7 32GB</span>
+        <span class="item-price">10.000.000₫</span>
+        <span class="item-quantity">Số lượng: 01</span>
+      </li>
+
+      <li class="clearfix">
+        <img src="image/oppo/oppo-a39-300x300.jpg" />
+        <span class="item-name">Điện thoại iPhone 7 32GB</span>
+        <span class="item-price">10.000.000₫</span>
+        <span class="item-quantity">Số lượng: 01</span>
+      </li>
+    					</ul>
+
+    				<a href="giohang.html" class="button_checkout">Mua hàng</a>
+  					</div>
+
+	<!-- end -->
+
+	
+	</header>
+	<div class="side-menu">
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="home.html"><i class="fa fa-home"></i></a></li>
+			<li><a href="danhsachsanpham.html"><i class="fa fa-mobile-phone"></i></a></li>
+			<li><a href="phukien.html"><span class="glyphicon glyphicon-headphones"></span></a></li>
+			<li><a href="khuyenmai.html"><i class="fa fa-gift"></i></a></li>
+			<li><a href="lienhe.html"><i class="fa fa-question-circle-o"></i></a></li>
+			<li><a href="tintuc.html"><i class="fa fa-share-alt"></i></a></li>
+			<li><a href="giohang.html"><i class="fa fa-shopping-bag"></i></a></li>
+		</ul>
+	</div>
+	<section class="container">
+		<div class="row">
+			
+				<ol class="breadcrumb">
+  					<li><a href="home.html">Home</a></li>
+  					<li><a href="danhsachsanpham.html">Sản phẩm</a></li>
+  					<li><a href="chitiet.html" class="active">Chi tiết</a></li>
+  					
+				</ol>
+			
+		</div>
+	</section>
+	
 
 	<section class="container">
 		<div class="row">
 
-			<div class="col-md-6 col-sm-6 col-xs-12 product_image">
-				<!-- amazing slider -->
-           		  <div class="product-img-box">
-                                        <p class="product-image">
-                                            <a href="image/iphone/iphone-se-16gb-2-300x300.jpg" class="cloud-zoom" id="ma-zoom1">
-                                                <img src="image/iphone/iphone-se-16gb-2-300x300.jpg" alt="Fusce aliquam" title="Fusce aliquam" />
-                                            </a>
-                                        </p>
-                                        <div class="more-views thumbnail-container">
-                                            <ul class="slider-left">
-                                                <li class="thumbnail-item">
-                                                    <a href="image/iphone/iphone-se-16gb-2-300x300.jpg" class="cloud-zoom-gallery" title="" name="images/products/1.jpg" rel="useZoom: 'ma-zoom1', smallImage: 'image/iphone/iphone-se-16gb-2-300x300.jpg'">
-                                                        <img src="image/iphone/iphone-se-16gb-2-300x300.jpg" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li class="thumbnail-item">
-                                                    <a href="image/iphone/iphone-se-16gb-2-300x300.jpg" class="cloud-zoom-gallery" title="" name="images/products/2.jpg" rel="useZoom: 'ma-zoom1', smallImage: 'image/iphone/iphone-se-16gb-2-300x300.jpg'">
-                                                        <img src="image/iphone/iphone-se-16gb-2-300x300.jpg" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li class="thumbnail-item">
-                                                    <a href="image/iphone/iphone-se-16gb-2-300x300.jpg" class="cloud-zoom-gallery" title="" name="images/products/3.jpg" rel="useZoom: 'ma-zoom1', smallImage: 'image/iphone/iphone-se-16gb-2-300x300.jpg'">
-                                                        <img src="image/iphone/iphone-se-16gb-2-300x300.jpg" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li class="thumbnail-item">
-                                                    <a href="#">
-                                                        <img src="image/iphone/iphone-se-16gb-2-300x300.jpg" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li class="thumbnail-item">
-                                                    <a href="image/iphone/iphone-se-16gb-2-300x300.jpg" class="cloud-zoom-gallery" title="" name="images/products/5.jpg" rel="useZoom: 'ma-zoom1', smallImage: 'image/iphone/iphone-se-16gb-2-300x300.jpg'">
-                                                        <img src="image/iphone/iphone-se-16gb-2-300x300.jpg" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li class="thumbnail-item">
-                                                    <a href="image/iphone/iphone-se-16gb-2-300x300.jpg" class="cloud-zoom-gallery" title="" name="images/products/6.jpg" rel="useZoom: 'ma-zoom1', smallImage: 'image/iphone/iphone-se-16gb-2-300x300.jpg'">
-                                                        <img src="image/iphone/iphone-se-16gb-2-300x300.jpg" alt="" />
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-       
-			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12 preview" id="anh1">
+     				<div class="preview-pic tab-content"> 
+      					<div class="tab-pane active" id="pic-1"><img src="image/iphone/ip732g.jpg" alt="">
+      					</div> 
+      					<div class="tab-pane" id="pic-2"><img src="image/iphone/Apple-iPhone-7-Plus-32GB-Vàng-hồng-300x300.jpeg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-3"><img src="image/iphone/iphone-7-32-gb-5-300x300.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-4"><img src="image/iphone/iphone7-32g.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-5"><img src="image/iphone/iphone_7_128gb_rose_gold_nhap_khau-300x300.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+     				</div> 
+     			<ul class="preview-thumbnail nav nav-tabs"><div class="logo_menuchinh" style="padding-top:5px; padding-left:10px; color:#fff; margin-left:auto; margin-right:auto; text-align=center; line-height:40px; font-size:16px;font-weight:bold;font-family:Arial">HOCWEBGIARE.COM</div>
+     				 <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="image/iphone/ip732g.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-2" data-toggle="tab"><img src="image/iphone/Apple-iPhone-7-Plus-32GB-Vàng-hồng-300x300.jpeg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-3" data-toggle="tab"><img src="image/iphone/iphone-7-32-gb-5-300x300.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-4" data-toggle="tab"><img src="image/iphone/iphone7-32g.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+     				<li><a data-target="#pic-5" data-toggle="tab"><img src="image/iphone/iphone_7_128gb_rose_gold_nhap_khau-300x300.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+     			</ul> 
+   			</div> 
+
+   			<div class="col-md-6 col-sm-6 col-xs-12 preview" id="anh2">
+     				<div class="preview-pic tab-content"> 
+      					<div class="tab-pane active" id="pic-6"><img src="image/iphone/iphone-7-9-300x300.jpg" alt="">
+      					</div> 
+      					<div class="tab-pane" id="pic-7"><img src="image/iphone/iphone32g-den.png" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-8"><img src="image/iphone/iphone32g-den2.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-9"><img src="image/iphone/iphone32g-den3.png" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-10"><img src="image/iphone/iphone-7-plus-13-300x300.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+     				</div> 
+     			<ul class="preview-thumbnail nav nav-tabs"><div class="logo_menuchinh" style="padding-top:5px; padding-left:10px; color:#fff; margin-left:auto; margin-right:auto; text-align=center; line-height:40px; font-size:16px;font-weight:bold;font-family:Arial">HOCWEBGIARE.COM</div>
+     				 <li class="active"><a data-target="#pic-6" data-toggle="tab"><img src="image/iphone/iphone-7-9-300x300.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-7" data-toggle="tab"><img src="image/iphone/iphone32g-den.png" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-8" data-toggle="tab"><img src="image/iphone/iphone32g-den2.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-9" data-toggle="tab"><img src="image/iphone/iphone32g-den3.png" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+     				<li><a data-target="#pic-10" data-toggle="tab"><img src="image/iphone/iphone-7-plus-13-300x300.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li>
+
+     			</ul> 
+   			</div> 
+
+   			<div class="col-md-6 col-sm-6 col-xs-12 preview" id="anh3">
+     				<div class="preview-pic tab-content"> 
+      					<div class="tab-pane active" id="pic-11"><img src="image/iphone/apple-iphone-7-32g-mau do5.jpg" alt="">
+      					</div> 
+      					<div class="tab-pane" id="pic-12"><img src="image/iphone/apple-iphone-7-32g-mau do4.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-13"><img src="image/iphone/apple-iphone-7-32g-mau do3.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-14"><img src="image/iphone/apple-iphone-7-32g-mau do2.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-15"><img src="image/iphone/apple-iphone-7-32g-mau do.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+     				</div> 
+     			<ul class="preview-thumbnail nav nav-tabs"><div class="logo_menuchinh" style="padding-top:5px; padding-left:10px; color:#fff; margin-left:auto; margin-right:auto; text-align=center; line-height:40px; font-size:16px;font-weight:bold;font-family:Arial">HOCWEBGIARE.COM</div>
+     				 <li class="active"><a data-target="#pic-11" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau do5.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-12" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau do4.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-13" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau do3.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-14" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau do2.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+     				<li><a data-target="#pic-15" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau do.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li>
+
+     			</ul> 
+   			</div> 
+
+   			<div class="col-md-6 col-sm-6 col-xs-12 preview" id="anh4">
+     				<div class="preview-pic tab-content"> 
+      					<div class="tab-pane active" id="pic-16"><img src="image/iphone/apple-iphone-7-32g-mau vang3.jpg" alt="">
+      					</div> 
+      					<div class="tab-pane" id="pic-17"><img src="image/iphone/apple-iphone-7-32g-mau vang2.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-18"><img src="image/iphone/apple-iphone-7-32g-mau vang4.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					<div class="tab-pane" id="pic-19"><img src="image/iphone/apple-iphone-7-32g-mau vang5.jpg" alt="Học thiết kế web bán hàng Online">
+      					</div> 
+      					
+     				</div> 
+     			<ul class="preview-thumbnail nav nav-tabs"><div class="logo_menuchinh" style="padding-top:5px; padding-left:10px; color:#fff; margin-left:auto; margin-right:auto; text-align=center; line-height:40px; font-size:16px;font-weight:bold;font-family:Arial">HOCWEBGIARE.COM</div>
+     				 <li class="active"><a data-target="#pic-16" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau vang3.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-17" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau vang2.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-18" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau vang4.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+      				<li><a data-target="#pic-19" data-toggle="tab"><img src="image/iphone/apple-iphone-7-32g-mau vang5.jpg" alt="Học thiết kế web bán hàng Online"></a>
+      				</li> 
+     				
+
+     			</ul> 
+   			</div> 
+        
 			<div class="col-md-6 col-sm-6 col-xs-12 product_content " >
 				<div class="product_name">
 					<h2>ĐIỆN THOẠI IPHONE 7 32GB</h2>
 				</div>
+				<div class="star_rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<span class="sl_danhgia">(Có 120 người đánh giá)</span>
+				</div>
 				<div class="product_price">
 					<div class="price-box">
 							<span>Giá bán :</span>
-							<span>18.790.000₫</span>
+							<span class="price">18.790.000₫</span>
 					</div>
+				</div>
+				<div class="tinh_trang">
+					<span>Tình trạng :</span>
+					<span class="con_hang">Còn hàng</span>
 				</div>
 				<!--Mô tả-->
 				<div class="mota">
@@ -160,16 +311,16 @@
 				</div>
 				<!-- mua hang -->
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="col-xs-12">
 						<div class="button">
 							<div class="button-wrapper">
 							
-								<a href="#" class="a-btn" data-toggle="modal" data-target="#myModal" >
+								<a href="giohang.html" class="a-btn" data-toggle="modal" data-target="#myModal" >
 									<span class="a-btn-text" >Mua hàng
 									</span> 
 								</a>
 
-								<a href="#" class="a-btn">
+								<a href="tragop.html" class="a-btn" id="tragop">
 									<span class="a-btn-text">Trả góp</span> 
 								</a>
 							
@@ -199,7 +350,9 @@
 					</ul>
 				</div>
 				<article>
-
+					
+					
+					<div class="vb1">
 					<strong>
 						Với thiết kế không quá nhiều thay đổi, vẫn bảo tồn vẻ đẹp truyền thống từ thời iPhone 6 Plus,  iPhone 7 Plus được trang bị nhiều nâng cấp đáng giá như camera kép, đạt chuẩn chống nước chống bụi cùng cấu hình cực mạnh.
 					</strong>
@@ -207,10 +360,14 @@
 						<img src="image/iphone/iphone-7-plus-256gb1-1.jpg">
 						<p>Thay đổi dãy nhựa an-ten bắt sóng được đưa vòng lên trên thay vì cắt ngang ở mặt lưng như trước.</p>
 					</p>
+					
 					<p>
 						<img src="image/iphone/iphone-7-plus-256gb2-1.jpg">
 						<p>Nút Home quen thuộc không còn là phím vật lý nữa mà được thay thế bằng cảm ứng, nó sẽ rung lên khi bạn ấn. Vì đã dùng iPhone một thời gian rất dài, nên tôi công nhận rằng hơi khó để làm quen với nó, nhưng có lẽ chỉ mất vài ngày thôi.</p>
 					</p>
+					</div>
+					<div class="rutgon"><button   class="btn btn-default xemthem"">Xem thêm</button></div>
+					<div class="vb2">
 					<p>
 						<img src="image/iphone/iphone-7-plus-256gb3-1.jpg">
 						<p>Cuối cùng chúng ta cũng có được chiếc iPhone vẫn sống khi rơi vào nước hay đi mưa không cần phải loay hoay tìm chỗ cất vì Apple đã mang chuẩn chống nước IP67 cho iphone 7 plus .(Lưu ý: không nên cố tình ngâm nước vì nếu có thiệt hại do vào nước sẽ không được Apple bảo hành).</p>
@@ -229,7 +386,11 @@
 
 						<p>Với 1 chạm nhanh chóng bạn có thể chuyển đổi giữa chế độ 1x và zoom 2x, hoặc bạn có thể kéo thanh trượt hay dùng 2 ngón tay đến zoom. Apple đã thêm tính năng zoom kỹ thuật số lên đến 10x.</p>
 					</p>
+					</div>
+					<div class="rutgon"><button  class="btn btn-default dong">Đóng</button></div>
+				
 				</article>
+
 				
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
@@ -281,47 +442,47 @@
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="detail">
-				<h2>Góc chia sẻ</h2>
+				<h2>Video đánh giá</h2>
 					<ul class="share">
 						<li>
 							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PfekGWBB50" frameborder="0" allowfullscreen></iframe>
 						</li>
 						<li>
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PfekGWBB50" frameborder="0" allowfullscreen></iframe>
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lMCwN1k-Vd8" frameborder="0" allowfullscreen></iframe>
 						</li>
 						<li>
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PfekGWBB50" frameborder="0" allowfullscreen></iframe>
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eYmSpM6w15Q" frameborder="0" allowfullscreen></iframe>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
-				<div class="sp_tuongtu">
-					<h2>Sản phẩm tương tự</h2>
+				<div class="pk_tuongtu">
+					<h2>Phụ kiện</h2>
 					<ul>
 						<li>
 							
 								<a class="info_sp">
-									<img src="image/iphone/iphone-se-16gb-2-300x300.jpg">
-									<h3>iPhone 7 Plus 32GB</h3>
-									<strong>18.790.000₫</strong>
+									<img src="image/phukien/taingheapple1.jpg">
+									<h3>Tai nghe iphone</h3>
+									<strong>200.000₫</strong>
 								</a>
 							
 						</li>
 						<li style="clear: both;">
 								<a class="info_sp">
-									<img src="image/iphone/iphone-se-16gb-2-300x300.jpg">
-									<h3>iPhone 7 Plus 32GB</h3>
-									<strong>18.790.000₫</strong>
+									<img src="image/phukien/taingheapple1.jpg">
+									<h3>Tai nghe iphone</h3>
+									<strong>290.000₫</strong>
 								</a>
 							
 						</li>
 						<li style="clear: both;">
 							
 								<a class="info_sp" >
-									<img src="image/iphone/iphone-se-16gb-2-300x300.jpg">
-									<h3>iPhone 7 Plus 32GB</h3>
-									<strong>18.790.000₫</strong>
+									<img src="image/phukien/daycapsac1.jpg">
+									<h3>Dây sạc</h3>
+									<strong>190.000₫</strong>
 								</a>
 							
 						</li>
@@ -329,13 +490,437 @@
 				</div>
 			</div>	
 	</section>
-	<iframe src="footer.html" width="100%" height="600" style="border: none;     margin-top: 23px;"  scrolling="no"></iframe>
+	
+	
+	<section class="container">
+		<div class="row">
+			<div class="product_same">
+				<h2>Sản phẩm tương tự</h2>
+				<div class=" owl-carousel owl-theme">
+				<div class="item">
+					
+						<div class="product-item__thumb">
+							<a><img src="image/iphone/iphone-se-16gb-2-300x300.jpg"></a>
+						</div>
+						<div class="product-item__content">
+							<h3 class="product-item__title">
+								<a href="chitietsanpham.html">Điện thoại iphone se 16gb</a>
+							</h3>
+							<div class="product-item__price">
+							<p class="product-item__price__regular">13.189.000₫</p>
+							</div>
+						</div>
+					
+				</div>
+
+				<div class="item">
+					
+						<div class="product-item__thumb">
+							<a><img src="image/iphone/iphone-6-plus-16gb-14-300x300.jpg"></a>
+						</div>
+						<div class="product-item__content">
+							<h3 class="product-item__title">
+								<a href="# ">Điện thoại iphone 6 plus</a>
+							</h3>
+							<div class="product-item__price">
+							<p class="product-item__price__regular">12.189.000₫</p>
+							</div>
+						</div>
+					
+				</div>
+
+				<div class="item">
+					
+						<div class="product-item__thumb">
+							<a><img src="image/samsung/samsung-galaxy-a9-pro-300x300.jpg"></a>
+						</div>
+						<div class="product-item__content">
+							<h3 class="product-item__title">
+								<a href="/oppo-neo-5">Điện thoại Samsung galaxy</a>
+							</h3>
+							<div class="product-item__price">
+							<p class="product-item__price__regular">10.189.000₫</p>
+							</div>
+						</div>
+					
+				</div>
+
+				<div class="item">
+					
+						<div class="product-item__thumb">
+							<a><img src="image/sony/sony-xperia-xa-ultra-1-300x300.jpg"></a>
+						</div>
+						<div class="product-item__content">
+							<h3 class="product-item__title">
+								<a href="/oppo-neo-5">Điện thoại Sony xperia </a>
+							</h3>
+							<div class="product-item__price">
+							<p class="product-item__price__regular">3.189.000₫</p>
+							</div>
+						</div>
+					
+				</div>
+
+				<div class="item">
+					
+						<div class="product-item__thumb">
+							<a><img src="image/oppo/oppo-a39-300x300.jpg"></a>
+						</div>
+						<div class="product-item__content">
+							<h3 class="product-item__title">
+								<a href="/oppo-neo-5">Điện thoại Oppo A37 </a>
+							</h3>
+							<div class="product-item__price">
+							<p class="product-item__price__regular">6.189.000₫</p>
+							</div>
+						</div>
+					
+				</div>
+
+				<div class="item">
+					
+						<div class="product-item__thumb">
+							<a><img src="image/oppo/oppo-neo-7-17-300x300.jpg"></a>
+						</div>
+						<div class="product-item__content">
+							<h3 class="product-item__title">
+								<a href="/oppo-neo-5">Điện thoại Oppo Neo 7</a>
+							</h3>
+							<div class="product-item__price">
+							<p class="product-item__price__regular">10.189.000₫</p>
+							</div>
+						</div>
+					
+				</div>
+			</div>	
+    			
+    		</div>
+			
+		</div>
+		
+	</section>
+	<!-- đánh giá -->
+	<section class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h3>Bình luận sản phẩm</h3>
+				
+			</div>
+		</div>
+	</section>
+	
+	<section class="container">
+		<div class="row">
+			
+
+			<div class="col-sm-12 col-md-8 col-xs-12">
+				<div class="row search_comment">
+					
+						<div class="style_binhluan">
+							<div class="col-md-8 col-sm-6 col-xs-6">
+								<h3 style="margin-top: -5px;">Sắp xếp bình luận</h3>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div style="text-align: center;">
+									<a href="#" class="new">Mới nhất</a>
+									<a href="#" class="like">Thích nhất</a>
+								</div>	
+							</div>
+						</div>
+				
+
+				</div>
+				<div class="media">
+					<a>	
+                        <img class="media-object anh_dd" src="image/icon/nguoidung.png" >
+                   </a>
+                    <div class="media-body">
+                      
+                        <textarea class="form-control" rows="3"></textarea>
+					 </div>
+                       
+                        
+
+                        <button type="submit" class="btn btn-primary binhluan">Bình luận</button>
+                   
+                </div>
+
+					<!--COMMENT  -->
+				<div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="image/icon/icon3.png" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Vương Mạnh Cường</h4>
+                        <p>Em mới mua con j2 lúc trước xac pin 3 tiếng đầy pin mà giờ xac ca ngày không đầy pin la sao</p>
+						<div class="binhluan_left">
+							<small>9:30 PM 
+								<small class="icon_left">
+									<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+								</small>	
+							</small>
+
+							<small class="so_like">
+									 0
+							</small>
+						</div>
+						
+						<div class="binhluan_right">
+							<a href="#" class="like_left">Thích</a>
+							<a href="#">Trả lời</a>
+						</div>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="image/icon/images.png" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Nguyễn Thế Phúc
+                            
+                        </h4>
+                        <p>Sản phẩm dùng rất tuyệt</p>
+                        <div class="binhluan_left">
+							<small>9:30 PM 
+								<small class="icon_left">
+									<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+								</small>
+
+								<small class="so_like">
+											 0
+								</small>	
+							</small>
+						</div>
+
+						<div class="binhluan_right">
+							<a href="#" class="like_left">Thích</a>
+							<a href="#">Trả lời</a>
+						</div>
+						<div class="clearfix"></div>
+                        <!--  Comment small -->
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="image/icon/admin.png" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Đỗ Vũ Hoàng Anh
+                                    
+                                </h4>
+                                <p>Chào bạn,Cảm ơn bản đã mua hàng của công ty mình</p>
+                                <div class="binhluan_left">
+									<small>9:30 PM 
+										<small class="icon_left">
+											<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+										</small>
+										<small class="so_like">
+											 0
+										</small>	
+									</small>
+								</div>
+
+								<div class="binhluan_right">
+									<a href="#" class="like_left">Thích</a>
+									<a href="#">Trả lời</a>
+								</div>
+                            </div>
+                        </div>
+                        <!-- End Nested Comment -->
+                    </div>
+                </div>
+			</div>
+
+			<div class="col-sm-12 col-md-4 col-xs-12">
+				<div class="chitiet_danhgia">
+					<h3>Chi tiết đánh giá</h3>
+					<div class="star_rating_detail">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<span class="sl_danhgia">(Có 120 người đánh giá)</span>	
+					</div>
+					<div class="detail-rating-mark">3,9/5 sao</div>
+					<div class="detail-rating-chart">
+						<div class="rating-item">
+							<span class="rating-level">5 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">20</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">4 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:53%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">15</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">3 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:37%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">12</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">2 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:21%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">2</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">1 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:12%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">1</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		
+	</section>
+	<!-- hết đánh giá -->
+ <!--Main Footer-->
+    <footer class="main-footer">
+        <div class="container-fluid">
+        	
+            <!--Subscribe Area-->
+            <div class="subscribe-area">
+            	<div class="subs-box">
+                
+                	<div class="row clearfix">
+                        <h2 class="col-md-6 col-sm-12 col-xs-12 pull-left">Subcribe Our <span>News</span></h2>
+                        
+                        <!--Form Box-->
+                        <div class="form-box col-md-6 col-sm-12 col-xs-12  pull-right">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" placeholder="Enter Email" required>
+                                    <button type="submit"><span class="icon fa fa-paper-plane"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Footer Widget Area-->
+            <div class="footer-widget-area clearfix">
+            
+            	<!--Footer Widget-->
+                <article class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12 " >
+                	<h3>Thông tin</h3>
+                    <div class="widget-content">
+                    	<p><a href="home.html">Trang chủ</a></p>
+                        <p><a href="danhsachsanpham.html">Điện thoại</a></p>
+                        <p><a href="phukien.html">Phụ kiện</a></p>
+                        <p><a href="khuyenmai.html">Khuyến mại</a></p>
+                        <p><a href="lienhe.html">Liên hệ</a></p>
+                    </div>
+                </article>
+                
+                <!--Footer Widget-->
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 ">
+                	<h3>Chính sách</h3>
+                    <div class="widget-content">
+                    	<ul>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Đổi và trả hàng hoá</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Nội quy cửa hàng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Vận chuyển miễn phí</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Bảo hành</a></li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <!--Footer Widget-->
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 " >
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <div class="widget-content">
+                   		<ul>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Giải quyết khiếu nại</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Kiểm tra hàng Apple chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hướng dẫn mua trả góp</a></li>
+                        </ul>
+    				</div>
+                </article>
+                <!--Footer Widget-->
+                <article class="footer-widget address col-md-3 col-sm-6 col-xs-12 ">
+                	<h3>Địa chỉ</h3>
+                    <div class="widget-content">
+                    	<ul class="info">
+                        	<li><span class="fa fa-map-marker"></span> &ensp; 169 Ga Đỗ Xá-Thường Tín-Hà Nội</li>
+                            <li><span class="fa fa-phone"></span> &ensp; 0943271111 - 0938969696</li>
+                            <li><span class="fa fa-envelope"></span> &ensp; <a href="mailto:info@companyname.com">thanhquan@gmail.com</a></li>
+                        </ul>
+                        
+                        <div class="social"><a class="img-circle fa fa-facebook-f" href="#"></a> <a class="img-circle fa fa-twitter" href="#"></a> <a class="img-circle fa fa-google-plus" href="#"></a> <a class="img-circle fa fa-linkedin" href="#"></a></div>
+                    </div>
+                </article>
+                
+                
+                
+            </div>
+            
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+        	<div class="auto-container text-center"></div>
+        </div>
+
+        <!-- nut back to stop -->
+	<div class="scroll-top-wrapper ">
+  		<span class="scroll-top-inner">
+    		<i class="fa fa-2x fa-arrow-circle-up"></i>
+ 		</span>
+	</div>
+	<!-- end back to stop -->
+        
+	</footer><!--Main Footer End-->	
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="chitiet.js"></script>
+	
+	<script src="js/chitiet.js"></script>
 	<script src="owlcarousel/owl.carousel.min.js"></script>
 	 <script src="dist/jquery.bxslider.js"></script>
-
+ 	<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="js/menudoc.js"></script>
+	<script type="text/javascript" src="js/backtostop.js"></script>
+	
+	
+	
 	
 	<!--Modal  -->
 	
@@ -349,21 +934,21 @@
 					<a href="#">
 						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 						 Giỏ hàng của bạn (
-						<span class="cart-popup-count">6</span>
+						<span class="cart-popup-count">1</span>
 						sản phẩm)
 					</a>
 				</p>
 
 			</div>
 			<div class="modal-body">
-				<div class="cart-desktop__thead">
+				<div class="cart-desktop__thead mobile_title">
 					<div class="cart-desktop__col-1">Sản phẩm</div>
 					<div class="cart-desktop__col-2">Đơn giá</div>
 					<div class="cart-desktop__col-3">Số lượng</div>
 					<div class="cart-desktop__col-4">Thành tiền</div>
 				</div>
 				<div class="cart-desktop__tbody">
-					<div class="cart-popup__item producted">
+					<div class="cart-popup__item producted mobile_body">
 						<div class="cart-desktop__col-1">
 							<div class="cart-popup__item-image">
 								<a href="#" title="Điện thoại iPhone 7 32GB - Bạc"><img src="image/iphone/iphone-se-16gb-2-300x300.jpg"></a>
@@ -389,7 +974,7 @@
 						</div>
 						<div class="cart-desktop__col-4">
 							<span class="cart-popup__item-price">
-								<span class="cart-popup__item-price__price total-price-item">112.740.000₫</span>
+								<span class="cart-popup__item-price__price total-price-item">11.740.000₫</span>
 							</span>
 						</div>
 					</div>
@@ -408,20 +993,36 @@
 							<i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
 							Tiếp tục mua hàng
 						</a>
-						<a class="button cart-desktop__tfooter-checkout" title="Tiến hành đặt hàng" href="#">
+						<a class="button cart-desktop__tfooter-checkout" title="Tiến hành đặt hàng" href="giohang.html">
 							<i class="fa fa-money" aria-hidden="true"></i>
 							Tiến hành đặt hàng
 						</a>
 					</div>
 				</div>
+				<div class="responsive_modal">
+
+					<img src="image/iphone/iphone-se-16gb-2-300x300.jpg">
+					<p>iPhone 7 Plus 32GB - Bạc</p>
+					<p>12.740.000₫</p>
+					<p><i class="fa fa-trash-o"></i>
+										 Bỏ sản phẩm</p>
+					<input class="form-control text-center" value="1" type="number">
+					<div class="tt">
+					<button  class="btn btn-default">Tiếp tục mua hàng</button>
+					</div>
+					<div class="dh">
+					<button  class="btn btn-default"><a href="giohang.html">Tiến hành đặt hàng</a></button>
+					</div>
+				</div>
+
 			</div>
 		
 		</div>
 	</div>
 	
 	
-	
+	<!-- tao live -->
 
-		
+	
 </body>
 </html>

@@ -39,9 +39,9 @@ var colHeight, itemHeight;
 function checkY(){
     scrollBottom = $(window).scrollTop() + window.innerHeight;
     startY = $('header').position().top + $('header').outerHeight();
-     endY = $('#end').position().top;
+     endY = $('.main-footer').position().top;
     if( $(window).scrollTop() > startY && scrollBottom < endY ){
-        if (window.innerWidth > 600 ) {
+        if (window.innerWidth > 900 ) {
 			$('#menu').removeClass('navbar-fixed-top');
             $('.side-menu').slideDown();
            
@@ -57,5 +57,15 @@ function checkY(){
    
 
 }
+
+//giỏ hàng
+ (function(){
+ 
+  $("#cart").on("click", function() {
+    $(".shopping-cart").fadeToggle( "fast");
+  });
+  
+})();
+
   
  
