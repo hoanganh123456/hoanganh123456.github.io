@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<!-- simpleLens CSS -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css" />
+	 <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+	<link rel="stylesheet"  href="css/footer.css">
+	<link rel="stylesheet"  href="css/header.css">
+	<link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/chitiet.css">
+	<title>Chi tiết sản phẩm</title>
+</head>
+<body>
+	<section class="header-top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="header-top-content">
+						<ul class="nav nav-pills navbar-left">
+							<li><a href="#">
+								<i class="fa fa-phone"></i>
+								<span>01273770392</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<i class="fa fa-envelope-o"></i>
+								<span>dovuhoanganh123@gmail.com</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="header-top-content">
+						<ul class="nav nav-pills navbar-right">
+							<li>
+								<a href="#">
+									<span>Ngôn ngữ</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="languages" style="margin-right: -20px;">
+									<span><img src="image/banner/vn.png"></span>
+                                 </a>
+                                <a href="#" class="languages"> 
+                                    <span><img src="image/banner/en_disabled.png"></span>
+								</a>
+							</li>
+							
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="header-area"><!--Start Header Area-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-lg-3">
+                <div class="log-link">
+                    <p>Well come visitor you can</p>
+                    <h5><a href="#" data-toggle="modal" data-target="#myModal" data-tabs="login">Đăng nhập</a> or <a href="#" data-toggle="modal" data-target="#myModal" data-tabs="signup">Đăng ký</a></h5>
+                    <!-- Dang Nhap va Dang ky -->
+                    <div class="modal fade user-modal in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="module form-module">
+                    <div class="toggle">
+                        Đăng ký
+                    </div>
+                <div class="form">
+                    <h2>Đăng nhập tài khoản của bạn</h2>
+                    <form>
+                    <input type="text" placeholder="Username"/>
+                    <input type="password" placeholder="Password"/>
+                    <button class="btn_login">Login</button>
+                    <button type="submit" name="go" class="btn btn-lg btn-primary btn-block facebook">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span>Facebook</span>
+                                        
+                                   </button>
+                    </form>
+                </div>
+                <div class="form">
+                    <h2>Tạo tài khoản</h2>
+                    <form>
+                    <input type="text" placeholder="Username"/>
+                    <input type="password" placeholder="Password"/>
+                    <input type="email" placeholder="Email Address"/>
+                    <input type="tel" placeholder="Phone Number"/>
+                    <button class="btn_login">Đăng ký</button>
+                    </form>
+                </div>
+                <div class="cta"><a href="#">Quên mật khẩu?</a></div>
+                </div>
+            </div> 
+        </div>    
+                    </div> 
+                    <!-- End dang ky  -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-6">
+                <div class="logo text-center">
+                    <a href="index.html">
+                        <img src="image/banner/logo-bn.png" alt="" />
+                       
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+               
+                <div class="search float-right">
+                    <input type="text" value="" placeholder="Search Here...." />
+                    <button class="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><!--End Header Area-->
+    <div class="menu-area"><!--Start Main Menu Area-->
+        <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-menu hidden-sm hidden-xs">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html" class="active">Trang chủ</a>
+                                
+                            </li>
+                            <li><a href="danhsachsanpham.html">Sản phẩm</a>
+                                <ul class="sub-menu">
+                                    <li><a href="nam.html">Nam</a></li>
+                                    <li><a href="nu.html">Nữ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="phukien.html">Phụ kiện</a>
+                                <div class="mega-menu mega-menu-1">
+                                    <div class="column-1 column">
+                                        <ul>
+                                             <li><a href="phukiennam.html">Nam</a></li>
+                                            <li><a href="phukiennam.html">Quần</a></li>
+                                            <li><a href="phukiennam.html">Áo</a></li>
+                                            <li><a href="phukiennam.html">Tất</a></li>
+                                            <li><a href="phukiennam.html">Đồng hồ</a></li>
+                                             <li><a href="phukiennam.html">Bình nước</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column-2 column">
+                                        <ul>
+                                            <li><a href="phukiennu.html">Nữ</a></li>
+                                            <li><a href="phukiennu.html">Quần</a></li>
+                                            <li><a href="phukiennu.html">Áo</a></li>
+                                            <li><a href="phukiennu.html">Tất</a></li>
+                                            <li><a href="phukiennu.html">Đồng hồ</a></li>
+                                             <li><a href="phukiennu.html">Bình nước</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li><a href="blog.html">Tin tức</a></li>
+                            <li><a href="contact.html">Liên hệ</a>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-menu hidden-md hidden-lg">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html" class="active">Trang chủ</a>
+                                
+                            </li>
+                            <li><a href="danhsachsanpham.html">Sản phẩm</a>
+                                <ul>
+                                   <li><a href="nam.html">Nam</a></li>
+                                    <li><a href="nu.html">Nữ</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="phukien.html">Phụ kiện</a>
+                                <ul>
+                                    <li><a href="phukiennam.html">Nam</a>
+                                    <ul>
+                                        <li><a href="phukiennam.html">Quần</a></li>
+                                        <li><a href="phukiennam.html">Áo</a></li>
+                                        <li><a href="phukiennam.html">Tất</a></li>
+                                        <li><a href="phukiennam.html">Đồng hồ</a></li>
+                                        <li><a href="phukiennam.html">Bình nước</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="phukiennu.html">Nữ</a>
+                                    <ul>
+                                        <li><a href="phukiennu.html">Quần</a></li>
+                                        <li><a href="phukiennu.html">Áo</a></li>
+                                        <li><a href="phukiennu.html">Tất</a></li>
+                                        <li><a href="phukiennu.html">Đồng hồ</a></li>
+                                        <li><a href="phukiennu.html">Bình nước</a></li>
+                                    </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                           
+                            
+                            <li><a href="blog.html">Tin tức</a>
+                                
+                            </li>
+                            <li><a href="contact.html">Contact</a>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-5">
+                 <div class="cart-info float-right">
+                    <a href="cart.html">
+                       <h5><span>2</span> sản phẩm - <span>1.300.000đ</span></h5>
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <div class="cart-hover">
+                        <ul class="header-cart-pro">
+                            <li>
+                                <div class="image"><a href="#"><img alt="cart item" src="image/nu/bitis/bitis-tim.jpg"></a></div>
+                                <div class="content fix"><a href="#">Hunter Feast xanh </a><span class="price">Giá: 650.000đ</span><span class="quantity">Số lượng: 1</span></div>
+                                <i class="fa fa-trash delete"></i>
+                            </li>
+                            <li>
+                                <div class="image"><a href="#"><img alt="cart item" src="image/nu/bitis/bitis-hong.jpg"></a></div>
+                               <div class="content fix"><a href="#">Hunter Feast xanh </a><span class="price">Giá: 650.000đ</span><span class="quantity">Số lượng: 1</span></div>
+                                <i class="fa fa-trash delete"></i>
+                            </li>
+                        </ul>
+                        <div class="header-button-price">
+                            <a href="checkout.html"><i class="fa fa-sign-out"></i><span>Mua hàng</span></a>
+                            <div class="total-price"><h3>Tổng tiền : <span>1.300.000đ</span></h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div><!--End Main Menu Area-->
+	
+	<!-- breadcrumb-area start -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="home.html">Home</a> <i class="fa fa-angle-right"></i></li>
+                            <li><a href="danhsachsanpham.html">Sản phẩm</a> <i class="fa fa-angle-right"></i></li>
+                            <li>Chi tiết</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb-area end -->
+	<section class="page_detail">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="details-pro-tab">
+			<!-- Tab panes -->
+					<div class="tab-content details-pro-tab-content">
+						<div class="tab-pane fade active in" id="image-1">
+							<div class="simpleLens-big-image-container">
+								<a class="simpleLens-lens-image" data-lens-image="image/giay-running-adidas-duramo-lite-nam-bb0805_2_ (1).jpg">
+									<img src="image/giay-running-adidas-duramo-lite-nam-bb0805_2_ (1).jpg" alt="" class="simpleLens-big-image">
+								</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="image-2">
+							<div class="simpleLens-big-image-container">
+								<a class="simpleLens-lens-image" data-lens-image="image/giay-running-adidas-duramo-lite-nam-bb0805_4_.jpg">
+									<img src="image/giay-running-adidas-duramo-lite-nam-bb0805_4_.jpg" alt="" class="simpleLens-big-image">
+								</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="image-3">
+							<div class="simpleLens-big-image-container">
+								<a class="simpleLens-lens-image" data-lens-image="image/giay-running-adidas-duramo-lite-nam-bb0805_3_.jpg">
+									<img src="image/giay-running-adidas-duramo-lite-nam-bb0805_3_.jpg" alt="" class="simpleLens-big-image">
+								</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="image-4">
+							<div class="simpleLens-big-image-container">
+								<a class="simpleLens-lens-image" data-lens-image="image/giay-running-adidas-duramo-lite-nam-bb0805_5_.jpg">
+									<img src="image/giay-running-adidas-duramo-lite-nam-bb0805_5_.jpg" alt="" class="simpleLens-big-image">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Nav tabs -->
+					<ul class="tabs-list details-pro-tab-list" role="tablist">
+						<li class="active"><a href="#image-1" data-toggle="tab" aria-expanded="true"><img src="image/giay-running-adidas-duramo-lite-nam-bb0805_2_ (1).jpg" alt=""></a></li>
+						<li class=""><a href="#image-2" data-toggle="tab" aria-expanded="false"><img src="image/giay-running-adidas-duramo-lite-nam-bb0805_4_.jpg" alt=""></a></li>
+						<li class=""><a href="#image-3" data-toggle="tab" aria-expanded="false"><img src="image/giay-running-adidas-duramo-lite-nam-bb0805_3_.jpg" alt=""></a></li>
+						<li><a href="#image-4" data-toggle="tab"><img src="image/giay-running-adidas-duramo-lite-nam-bb0805_5_.jpg" alt=""></a></li>
+					</ul>
+				</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="product_name">
+					<h2> adidas Duramo Lite nam</h2>
+				</div>
+				<div class="star_rating">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<span class="sl_danhgia">(Có 120 người đánh giá)</span>
+				</div>
+				<div class="product_price">
+					<div class="price-box">
+							<span>Giá bán :</span>
+							<span class="price">1.395.000₫</span>
+					</div>
+				</div>
+				<div class="tinh_trang">
+					<span>Tình trạng :</span>
+					<span class="con_hang">Còn hàng</span>
+				</div>
+				<div class="clearfix"></div>
+				<div class="size_chose" style="margin-top: 18px;">
+					<span style="margin-right: 27px;float: left;margin-top: 9px;">Kích cỡ</span>
+					<select class="form-control">
+						<option>39</option>
+						<option>40</option>
+						<option>41</option>
+						<option>42</option>
+						<option>43</option>
+						<option>44</option>
+					</select>
+				</div>
+
+				<div class="sl" style="margin-top: 19px;">
+					<span style="margin-right: 17px;float: left;margin-top: 10px;">Số lượng</span>
+					<input type="number" name="sl" min="1" value="1" class="form-control">
+				</div>
+				<!-- chọn màu -->
+				<div class="chonmau">
+					<label>Chọn màu:</label>
+					<div class="buttons">
+							<a class="color1" href="#"></a>
+							<a class="color2" href="#"></a>
+							<a class="color3" href="#"></a>
+							<a class="color4" href="#"></a>
+					</div>
+				</div>
+				<!-- chọn size -->
+
+				<!-- mua hang -->
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="button">
+							<div class="button-wrapper">
+							
+								<a href="giohang.html" class="a-btn" data-toggle="modal" data-target="#shop_product" >
+									<span class="a-btn-text" >Mua hàng
+									</span> 
+								</a>
+
+								
+							
+							</div>
+						</div>
+						<div class="lienhe">
+							<p>Gọi 1900xxxxx để được tư vấn miễn phí</p>
+						</div>
+					</div>	
+				</div>	
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="description">
+					<!-- Nav tabs -->
+					<ul class="nav product-nav">
+						<li class="active"><a data-toggle="tab" href="#information" aria-expanded="true">Mô tả</a></li>
+						<li class=""><a data-toggle="tab" href="#review" aria-expanded="false">Nhận xét</a></li>
+                        <li class=""><a data-toggle="tab" href="#video" aria-expanded="false">Video đánh giá</a></li>
+						
+						
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div id="information" class="tab-pane fade active in" role="tabpanel">
+							<p>Phiên bản thoải mái nhất, giày chạy bộ dành cho nam giới của ADIDAS DURAMO LITE được thiết kế với vật liệu kết hợp hơn người tiền nhiệm của nó, trong khi vẫn cung cấp sự kết hợp kỳ diệu của đệm mềm và tốc độ đáp ứng.</p>
+							<ul class="info_tab">
+								<li>Cao su phân đoạn tăng tính linh hoạt</li>
+								<li>Áp suất cao cho một bước nhảy trung lập, hiệu quả</li>
+								<li>Trọng lượng: 11,5 ounces (nam giới cỡ 10)</li>
+							</ul>
+						</div>
+						<div id="review" class="tab-pane fade" role="tabpanel">
+							<section class="container">
+								<div class="row">
+			
+
+			                         <div class="col-sm-12 col-md-8 col-xs-12">
+				<div class="product-comment">
+					<ul class="all-coment">
+						<li class="coment">
+							<div class="product-coments">
+								<img src="image/icon/icon3.png">
+								<div class="product-comment-content">
+									<p>
+										<strong>Khánh</strong>
+										<span>Ngày 7/5/2015:</span>
+										<span class="reply-right">
+											<a href="#" class="reply_comment">
+												<i class="fa fa-reply"></i><span class="hidden-sm hidden-xs"> Trả lời</span></a>
+											</a>
+										</span>
+									</p>
+									<div class="desc">
+										Cửa hàng còn hàng không hả ad
+									</div>
+								</div>
+								<ul class="children">
+									<div class="product-coments">
+										<img src="image/icon/admin.png">
+									<div class="product-comment-content">
+									<p>
+										<strong>admin</strong>
+										<span>Ngày 7/5 2015:</span>
+										<span class="reply-right">
+											<a href="#" class="reply_comment">
+												<i class="fa fa-reply"></i><span class="hidden-sm hidden-xs"> Trả lời</span></a>
+											</a>
+										</span>
+									</p>
+									<div class="desc">
+										Sản phẩm còn hàng nhé bạn
+									</div>
+								</div>
+								</div>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="review-form-wrapper">
+											<h3>Đánh giá</h3>
+											<form action="#" style="margin-top: 14px;">
+												<input type="text" class="form-control" placeholder="your name"  />
+												<input type="email" class="form-control" placeholder="your email"/>
+												
+												<textarea id="product-message" class="form-control" cols="30" rows="10" placeholder="Bình luận"></textarea>
+												<input type="submit" value="submit" />
+											</form>
+										</div>
+				
+			                         </div>
+
+			                         <div class="col-sm-12 col-md-4 col-xs-12">
+				<div class="chitiet_danhgia">
+					<h3>Chi tiết đánh giá</h3>
+					<div class="star_rating_detail">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<span class="sl_danhgia">(Có 120 người đánh giá)</span>	
+					</div>
+					<div class="detail-rating-mark">3,9/5 sao</div>
+					<div class="detail-rating-chart">
+						<div class="rating-item">
+							<span class="rating-level">5 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">20</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">4 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:53%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">15</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">3 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:37%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">12</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">2 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:21%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">2</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="rating-item">
+							<span class="rating-level">1 sao</span>
+							<span class="rating-bar">
+								<div class="progress">
+    								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:12%">
+      
+    								</div>
+  								</div>
+							</span>
+							<span class="rating-counter">1</span>
+						</div>
+					</div>
+				</div>
+			                         </div>
+								</div> 
+		
+							</section>
+						</div>
+                        <div id="video"  class="tab-pane fade" role="tabpanel">
+                            <div class="embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qTaIVsT4xjI" style="max-width: 560px;max-height: 315px"></iframe>
+                            </div>
+                            
+                        </div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="featured-product mb-50">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center mb-50">
+							<h2 class="uppercase">Sản phẩm tương tự</h2>
+						</div>
+					</div>
+				</div>
+				<div class="featured-product">
+                        <div class="row active-featured-product slick-arrow-2">
+                            <!-- product-item start -->
+                            <div class="col-xs-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="single-product.html">
+                                            <img src="image/nam/adidas/giay-running-adidas-galaxy-3-nam-bb4360.jpg" alt=""/>
+                                        </a>
+                                    </div>
+
+                                    <div class="product-info">
+                                        <h6 class="product-title">
+                                            <a href="single-product.html">adidas galaxy 3</a>
+                                        </h6>
+                                        <div class="pro-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                        </div>
+                                        <h3 class="pro-price">490.000 ₫</h3>
+                                        <div class="icon">
+											<a href="yeuthich.html"><i class="fa fa-heart-o"></i></a>
+											<a href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+											<a href="chitiet.html"><i class="fa fa-search-plus"></i></a>
+										</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                            <!-- product-item start -->
+                             <div class="col-xs-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="single-product.html">
+                                            <img src="image/nam/bitis/bitis-do.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6 class="product-title">
+                                            <a href="single-product.html">HUNTER LITEKNIT SUMMER VIBES 2</a>
+                                        </h6>
+                                        <div class="pro-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                        </div>
+                                        <h3 class="pro-price">650.000 ₫</h3>
+                                        
+                                        <div class="icon">
+											<a href="yeuthich.html"><i class="fa fa-heart-o"></i></a>
+											<a href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+											<a href="chitiet.html"><i class="fa fa-search-plus"></i></a>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                            <!-- product-item start -->
+                             <div class="col-xs-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="single-product.html">
+                                            <img src="image/nam/Nike/Giầy running nike AIR ZOOM SPAN nam 852437-002.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6 class="product-title">
+                                            <a href="single-product.html">nike AIR ZOOM SPAN</a>
+                                        </h6>
+                                        <div class="pro-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                        </div>
+                                        <h3 class="pro-price">1.190.000 ₫</h3>
+                                        <div class="icon">
+											<a href="yeuthich.html"><i class="fa fa-heart-o"></i></a>
+											<a href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+											<a href="chitiet.html"><i class="fa fa-search-plus"></i></a>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                            <!-- product-item start -->
+                            <div class="col-xs-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="single-product.html">
+                                            <img src="image/nam/Nike/giay-running-nike-lunarstelos-nam-844591-401.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6 class="product-title">
+                                            <a href="single-product.html">nike lunarstelos</a>
+                                        </h6>
+                                        <div class="pro-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                        </div>
+                                        <h3 class="pro-price">2.190.000 ₫</h3>
+                                        
+                                        <div class="icon">
+											<a href="yeuthich.html"><i class="fa fa-heart-o"></i></a>
+											<a href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+											<a href="chitiet.html"><i class="fa fa-search-plus"></i></a>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                            <!-- product-item start -->
+                             <div class="col-xs-12">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="single-product.html">
+                                            <img src="image/nam/Nike/giay-running-nike-flex-2017-rn-nam-898457-003.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6 class="product-title">
+                                            <a href="single-product.html">nike flex 2017</a>
+                                        </h6>
+                                        <div class="pro-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                        </div>
+                                        <h3 class="pro-price">2.190.000 ₫</h3>
+                                        
+                                        <div class="icon">
+											<a href="yeuthich.html"><i class="fa fa-heart-o"></i></a>
+											<a href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+											<a href="chitiet.html"><i class="fa fa-search-plus"></i></a>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                        </div>
+                </div>          
+            </div>            
+        </div>
+
+	<footer class="main-footer">
+        <div class="container-fluid">
+        	
+            <!--Subscribe Area-->
+            <div class="subscribe-area">
+            	<div class="subs-box">
+                
+                	<div class="row clearfix">
+                        <h2 class="col-md-6 col-sm-12 col-xs-12 pull-left">Subcribe Our <span>News</span></h2>
+                        
+                        <!--Form Box-->
+                        <div class="form-box col-md-6 col-sm-12 col-xs-12  pull-right">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" placeholder="Enter Email" required>
+                                    <button type="submit"><span class="icon fa fa-paper-plane"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Footer Widget Area-->
+            <div class="footer-widget-area clearfix">
+            
+            	<!--Footer Widget-->
+                <article class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12 " >
+                	<h3>Thông tin</h3>
+                    <div class="widget-content">
+                    	<p><a href="home.html">Trang chủ</a></p>
+                        <p><a href="danhsachsanpham.html">Điện thoại</a></p>
+                        <p><a href="phukien.html">Phụ kiện</a></p>
+                        <p><a href="tintuc.html">Blog</a></p>
+                        <p><a href="lienhe.html">Liên hệ</a></p>
+                    </div>
+                </article>
+                
+                <!--Footer Widget-->
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 ">
+                	<h3>Chính sách</h3>
+                    <div class="widget-content">
+                    	<ul>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Đổi và trả hàng hoá</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Nội quy cửa hàng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Vận chuyển miễn phí</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Bảo hành</a></li>
+                        </ul>
+                    </div>
+                </article>
+                
+               <!--Footer Widget-->
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 " >
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <div class="widget-content">
+                   		<ul>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Giải quyết khiếu nại</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Kiểm tra hàng chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hướng dẫn mua trả góp</a></li>
+                        </ul>
+    				</div>
+                </article>
+                <!--Footer Widget-->
+                <article class="footer-widget address col-md-3 col-sm-6 col-xs-12 ">
+                	<h3>Địa chỉ</h3>
+                    <div class="widget-content">
+                    	<ul class="info">
+                        	<li><span class="fa fa-map-marker"></span> &ensp; 169 Ga Đỗ Xá-Thường Tín-Hà Nội</li>
+                            <li><span class="fa fa-phone"></span> &ensp; 0943271111 - 0938969696</li>
+                            <li><span class="fa fa-envelope"></span> &ensp; <a href="mailto:info@companyname.com">thanhquan@gmail.com</a></li>
+                        </ul>
+                        
+                        <div class="social"><a class="img-circle fa fa-facebook-f" href="#"></a> <a class="img-circle fa fa-twitter" href="#"></a> <a class="img-circle fa fa-google-plus" href="#"></a> <a class="img-circle fa fa-linkedin" href="#"></a></div>
+                    </div>
+                </article>
+                
+                
+                
+            </div>
+            
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+        	<div class="auto-container text-center"></div>
+        </div>
+        
+	</footer><!--Main Footer End-->
+     <!-- nut back to stop -->
+    <div class="scroll-top-wrapper ">
+        <span class="scroll-top-inner">
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </div>
+    <!-- end back to stop -->	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<!-- simpleLens JS -->
+	<script type="text/javascript" src="js/jquery.simpleLens.min.js"></script>
+	 <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+	<!-- Price Slider JS -->
+	<script type="text/javascript" src="js/chitiet.js"></script>
+     <script type="text/javascript" src="js/backtostop.js"></script>
+
+     <!--Modal  -->
+    
+    
+    <div class="modal fade bgmodal" id="shop_product" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog cart-desktop__bg">
+        
+            <div class="modal-header">
+                <button class="button cart-desktop__close" data-dismiss="modal" aria-label="Close">X</button>
+                <p class="cart-desktop__title">
+                    <a href="#">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                         Giỏ hàng của bạn (
+                        <span class="cart-popup-count">1</span>
+                        sản phẩm)
+                    </a>
+                </p>
+
+            </div>
+            <div class="modal-body">
+                <div class="cart-desktop__thead mobile_title">
+                    <div class="cart-desktop__col-1">Sản phẩm</div>
+                    <div class="cart-desktop__col-2">Đơn giá</div>
+                    <div class="cart-desktop__col-3">Số lượng</div>
+                    <div class="cart-desktop__col-4">Thành tiền</div>
+                </div>
+                <div class="cart-desktop__tbody">
+                    <div class="cart-popup__item producted mobile_body">
+                        <div class="cart-desktop__col-1">
+                            <div class="cart-popup__item-image">
+                                <a href="#" title=""><img src="image/nam/adidas/giay-running-adidas-duramo-lite-nam-bb0805.jpg"></a>
+                            </div>
+                            <div class="cart-popup__item-info">
+                                <p class="cart-popup__item-name"><a href="/dien-thoai-iphone-7-32gb" title="Điện thoại iPhone 7 32GB - Bạc">ADIDAS DURAMO LITE</a></p>
+                                <p class="cart-popup__item-variant__title">Xanh</p>
+                                <p class="cart-popup__item-remove">
+                                    <a href="#" class="cart-popup__item-remove__button remove-item-cart" title="Xóa" data-id="7657759">
+                                        <i class="fa fa-trash-o"></i>
+                                         Bỏ sản phẩm
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-desktop__col-2">
+                            <div class="cart-popup__item-price">
+                                <span class="cart-popup__item-price__price">1.790.000₫</span>
+                            </div>
+                        </div>
+                        <div class="cart-desktop__col-3">
+                            <input class="form-control text-center" value="1" type="number" min="1">
+                        </div>
+                        <div class="cart-desktop__col-4">
+                            <span class="cart-popup__item-price">
+                                <span class="cart-popup__item-price__price total-price-item">1.740.000₫</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-desktop__tfooter">
+                    <div class="cart-desktop__tfooter-info clearfix">
+                        <p class="cart-desktop__tfooter-hotline">
+                            <i class="fa fa-phone" aria-hidden="true"> Hotline: <a href="tel:1900 451 452">1900 451 452</a></i>
+                        </p>
+                        <p class="cart-desktop__tfooter-total">
+                            Tổng tiền: <span class="total-price">1.740.000₫</span>
+                        </p>
+                    </div>
+                    <div class="cart-desktop__tfooter-action clearfix">
+                        <a class="button cart-desktop__tfooter-continue" title="Tiếp tục mua hàng" data-dismiss="modal">
+                            <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                            Tiếp tục mua hàng
+                        </a>
+                        <a class="button cart-desktop__tfooter-checkout" title="Tiến hành đặt hàng" href="giohang.html">
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                            Tiến hành đặt hàng
+                        </a>
+                    </div>
+                </div>
+                <div class="responsive_modal">
+
+                    <img src="image/nam/adidas/giay-running-adidas-duramo-lite-nam-bb0805.jpg">
+                    <p>ADIDAS DURAMO LITE</p>
+                    <p>1.740.000₫</p>
+                    <p><i class="fa fa-trash-o"></i>
+                                         Bỏ sản phẩm</p>
+                    <input class="form-control text-center" value="1" type="number" min="1">
+                    <div class="tt">
+                    <button  class="btn btn-default">Tiếp tục mua hàng</button>
+                    </div>
+                    <div class="dh">
+                    <button  class="btn btn-default"><a href="giohang.html">Tiến hành đặt hàng</a></button>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

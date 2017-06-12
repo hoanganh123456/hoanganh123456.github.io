@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/thanhtoan.css">
+
+	<title>Thanh toán</title>
+</head>
+<body>
+	<header>
+		<div class="title_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="text-left uppercase" style="color: #000080;font-weight: bold;">shoes running store</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="page-web">
+		<div class="container">
+			<div class="col-md-4 col-sm-12" class="customer-infor">
+				<div class="title_customer">
+					<h2><label>Thông tin mua hàng</label></h2>
+				</div>
+				<div class="form-group title_login">
+	                <a href="#" data-toggle="modal" data-target="#myModal" data-tabs="login">Đăng ký tài khoản mua hàng</a>
+	                <span style="padding: 0 5px;">/</span>
+	                <a href="#" data-toggle="modal" data-target="#myModal" data-tabs="login">Đăng nhập </a>
+	            </div>
+	            <!-- Dang Nhap va Dang ky -->
+                    <div class="modal fade user-modal in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="module form-module">
+                    <div class="toggle">
+                        Đăng ký
+                    </div>
+                <div class="form">
+                    <h2>Đăng nhập tài khoản của bạn</h2>
+                    <form>
+                    <input type="text" placeholder="Username"/>
+                    <input type="password" placeholder="Password"/>
+                    <button class="btn_login">Đăng nhập</button>
+                    <button type="submit" name="go" class="btn btn-lg btn-primary btn-block facebook">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span>Facebook</span>
+                                        
+                                   </button>
+                    </form>
+                </div>
+                <div class="form">
+                    <h2>Tạo tài khoản</h2>
+                    <form>
+                    <input type="text" placeholder="Username"/>
+                    <input type="password" placeholder="Password"/>
+                    <input type="email" placeholder="Email Address"/>
+                    <input type="tel" placeholder="Phone Number"/>
+                    <button class="btn_login">Đăng ký</button>
+                    </form>
+                </div>
+                <div class="cta"><a href="#">Quên mật khẩu?</a></div>
+                </div>
+            </div> 
+        </div>    
+                    </div> 
+                    <!-- End dang ky  -->
+	            <hr class="line">
+	            <div class="form-group">
+	                                <input data-error="Vui lòng nhập email đúng định dạng" required="" name="Email" value="" type="email" class="form-control" placeholder="Email" required="data-error">
+	            </div>
+	            <div class="billing">
+                                <div class="form-group">
+                                    <a class="underline-none open" style="text-decoration: none;">
+                                        <span>Thông tin thanh toán và nhận hàng</span>
+                                        <span class="hide">Thông tin thanh toán</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input data-error="Vui lòng nhập họ tên" required=""  class="form-control" placeholder="Họ và tên">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Số điện thoại" data-error="Vui lòng nhập số điện thoại">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    
+                                    
+                                        <div class="form-group">
+                                            <input name="BillingAddress.Address1" class="form-control" placeholder="Địa chỉ">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    
+                                    
+                                        
+                                        <div class="form-group">
+                                            <div class="next-select__wrapper">
+                                                <select id="billingProvince" bind-event-change="billingProviceChange()" bind="BillingProvinceId" name="BillingProvinceId" class="form-control next-select" required="" data-error="Bạn chưa chọn tỉnh thành">
+                                                    <option value="">--- Chọn Tỉnh thành ---</option>
+                                                    
+											    <option value="1">Hà Nội</option>
+
+											    <option value="2">TP Hồ Chí Minh</option>
+
+											    <option value="3">An Giang</option>
+
+											    <option value="4">Bà Rịa-Vũng Tàu</option>
+
+											    <option value="5">Bắc Giang</option>
+
+											    <option value="6">Bắc Kạn</option>
+
+											    <option value="7">Bạc Liêu</option>
+
+											    <option value="8">Bắc Ninh</option>
+
+											    <option value="9">Bến Tre</option>
+
+											    <option value="10">Bình Định</option>
+
+											    <option value="11">Bình Dương</option>
+
+											    <option value="12">Bình Phước</option>
+
+											    <option value="13">Bình Thuận</option>
+
+											    <option value="14">Cà Mau</option>
+
+											    <option value="15">Cần Thơ</option>
+
+											    <option value="16">Cao Bằng</option>
+
+											    <option value="17">Đà Nẵng</option>
+
+											    <option value="18">Đắk Lắk</option>
+
+											    <option value="19">Đắk Nông</option>
+
+											    <option value="20">Điện Biên</option>
+
+											    <option value="21">Đồng Nai</option>
+
+											    <option value="22">Đồng Tháp</option>
+
+											    <option value="23">Gia Lai</option>
+
+											    <option value="24">Hà Giang</option>
+
+											    <option value="25">Hà Nam</option>
+
+    
+
+                                                </select>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                            <div  class="form-group">
+                                                <div class="next-select__wrapper">
+                                                    <select  class="form-control next-select" data-error="Bạn chưa chọn quận huyện"><option value="">--- Chọn quận huyện ---</option></select>
+                                                   
+                                                </div>
+                                               
+                                            </div>
+                                        
+                                    
+                                   
+                                  
+                                </div>
+                                <div class="form-group">
+                                	<textarea name="note" value="" class="form-control" placeholder="Ghi chú"></textarea>
+                            	</div>
+                            </div>
+			</div>
+			
+			<div class="col-md-4 col-sm-12">
+                        	<div class="shipping-method">
+                                <div class="form-group">
+                                    <h2>
+                                        <label class="control-label">Vận chuyển</label>
+                                    </h2>
+                                    <div class="next-select__wrapper">
+                                        <select class="form-control next-select"><option>Miễn phí - Miễn phí</option></select>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group payment-method-list">
+                                <h2>
+                                    <label class="control-label">Thanh toán</label>
+                                </h2>
+                                
+    							 <select class="form-control next-select">
+    							 		<option>Thanh toán online</option>
+    							 		<option>Thanh toán trực tiếp</option>
+    							 </select>
+
+
+
+                            </div>
+                            
+                        </div>
+			<div class="col-md-4 col-sm-12 order-info">
+                            <div class="order-summary order-summary--custom-background-color ">
+                                <div class="order-summary-header summary-header--thin summary-header--border">
+                                    <h2>
+                                        <label class="control-label">Đơn hàng</label>
+                                        <label class="control-label" style="margin-left: 2px;">(1)</label>
+                                    </h2>
+                                 
+                                </div>
+                                <div class="order-items mobile--is-collapsed">
+                                    <div class="summary-body summary-section summary-product">
+                                        <div class="summary-product-list">
+                                            <ul class="product-list">
+                                                
+                                                    <li class="product product-has-image clearfix">
+                                                        <div class="product-thumbnail pull-left">
+                                                            <div class="product-thumbnail__wrapper">
+                                                                
+                                                                    <img src="image/nam/adidas/giay-running-adidas-duramo-lite-nam-bb0805.jpg" alt="adidas duramo" class="product-thumbnail__image">
+                                                                
+                                                            </div>
+                                                            <span class="product-thumbnail__quantity" aria-hidden="true">1</span>
+                                                        </div>
+                                                        <div class="product-info pull-left infor_content ">
+                                                            <span class="product-info-name">
+                                                                
+                                                                <strong>adidas duramo lite</strong>
+                                                            </span>
+                                                            
+                                                                <span class="product-info-description">
+                                                                    Xanh
+                                                                </span>
+                                                            
+                                                            
+                                                        </div>
+                                                        <strong class="product-price pull-right responsive_price">
+                                                            1.170.000₫
+                                                        </strong>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="summary-section">
+                                    	<div class="click_button">
+                                        <a href="#" class="click_sale">Nhập mã giảm giá</a>
+                                          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                          </div>
+                                        <div class="form-group">
+                                            <div class="input-group sale_content">
+                                                <input type="text" class="form-control " placeholder="Nhập mã giảm giá">
+                                              
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary event-voucher-apply" type="button">Áp dụng</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="summary-section border-top-none--mobile">
+                                    <div class="total-line total-line-subtotal clearfix">
+                                        <span class="total-line-name pull-left">
+                                            Tạm tính
+                                        </span>
+                                        <span class="total-line-subprice pull-right">1.170.000₫</span>
+                                    </div>
+                                    <div class="total-line total-line-shipping clearfix" bind-show="requiresShipping">
+                                        <span class="total-line-name pull-left">
+                                            Phí vận chuyển
+                                        </span>
+                                        <span class="pull-right">Miễn phí</span>
+                                    </div>
+                                    <div class="total-line total-line-total clearfix">
+                                        <span class="total-line-name pull-left">
+                                            Tổng cộng
+                                        </span>
+                                        <span class="total-line-price pull-right">1.170.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group clearfix " style="margin-top: 16px;">
+                                <input class="btn btn-primary col-md-12 col-sm-12 col-xs-12 mt10 btn-checkout" type="button" value="ĐẶT HÀNG">
+                            </div>
+                            
+                        </div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		
+		if($(window).width()>800){
+			$('.click_sale').click(function() {
+			$('.sale_content').css('display','block');
+			$('.click_button').css('display','none');
+			
+		});
+		}
+		else{
+			$('.sale_content').css('display','block');
+			$('.click_button').css('display','none');
+		}	
+
+		$('.toggle').click(function(){
+  // Switches the Icon
+  $(this).children('i').toggleClass('fa-pencil');
+  // Switches the forms  
+  $('.form').animate({
+    height: "toggle",
+    'padding-top': 'toggle',
+    'padding-bottom': 'toggle',
+    opacity: "toggle"
+  }, "slow");
+});
+		
+	</script>
+</body>
+</html>

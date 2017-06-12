@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yêu thích</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/giohang.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link href="css/footer.css" rel="stylesheet">
+    <style type="text/css">
+      .red{
+        background: rgba(0, 0, 128, 0.81);
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+      }
+      .red a{
+        color: #fff;
+      }
+      .red:hover{
+        background: rgba(12, 102, 12, 0.85);
+      }
+      .q_product{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+
+ <section class="header-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="header-top-content">
+            <ul class="nav nav-pills navbar-left">
+              <li><a href="#">
+                <i class="fa fa-phone"></i>
+                <span>01273770392</span>
+                </a>
+              </li>
+              <li><a href="#">
+                <i class="fa fa-envelope-o"></i>
+                <span>dovuhoanganh123@gmail.com</span>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="header-top-content">
+            <ul class="nav nav-pills navbar-right">
+              <li>
+                <a href="#">
+                  <span>Ngôn ngữ</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="languages" style="margin-right: -20px;">
+                  <span><img src="image/banner/vn.png"></span>
+                                 </a>
+                                <a href="#" class="languages"> 
+                                    <span><img src="image/banner/en_disabled.png"></span>
+                </a>
+              </li>
+              
+            </ul>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="header-area"><!--Start Header Area-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-lg-3">
+                <div class="log-link">
+                    <p>Well come visitor you can</p>
+                    <h5><a href="#" data-toggle="modal" data-target="#myModal" data-tabs="login">Đăng nhập</a> or <a href="#" data-toggle="modal" data-target="#myModal" data-tabs="signup">Đăng ký</a></h5>
+                    <!-- Dang Nhap va Dang ky -->
+                    <div class="modal fade user-modal in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="module form-module">
+                    <div class="toggle">
+                        Đăng ký
+                    </div>
+                <div class="form">
+                    <h2>Đăng nhập tài khoản của bạn</h2>
+                    <form>
+                    <input type="text" placeholder="Username"/>
+                    <input type="password" placeholder="Password"/>
+                    <button class="btn_login">Đăng nhập</button>
+                    <button type="submit" name="go" class="btn btn-lg btn-primary btn-block facebook">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span>Facebook</span>
+                                        
+                                   </button>
+                    </form>
+                </div>
+                <div class="form">
+                    <h2>Tạo tài khoản</h2>
+                    <form>
+                    <input type="text" placeholder="Username"/>
+                    <input type="password" placeholder="Password"/>
+                    <input type="email" placeholder="Email Address"/>
+                    <input type="tel" placeholder="Phone Number"/>
+                    <button class="btn_login">Đăng ký</button>
+                    </form>
+                </div>
+                <div class="cta"><a href="#">Quên mật khẩu?</a></div>
+                </div>
+            </div> 
+        </div>    
+                    </div> 
+                    <!-- End dang ky  -->
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-6">
+                <div class="logo text-center">
+                    <a href="index.html">
+                        <img src="image/banner/logo-bn.png" alt="" />
+                       
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+               
+                <div class="search float-right">
+                    <input type="text" value="" placeholder="Search Here...." />
+                    <button class="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><!--End Header Area-->
+    <div class="menu-area"><!--Start Main Menu Area-->
+        <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                 <div class="main-menu hidden-sm hidden-xs">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html" class="active">Trang chủ</a>
+                                
+                            </li>
+                            <li><a href="danhsachsanpham.html">Sản phẩm</a>
+                                <ul class="sub-menu">
+                                    <li><a href="nam.html">Nam</a></li>
+                                    <li><a href="nu.html">Nữ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="phukien.html">Phụ kiện</a>
+                                <div class="mega-menu mega-menu-1">
+                                    <div class="column-1 column">
+                                        <ul>
+                                            <li><a href="phukiennam.html">Nam</a></li>
+                                            <li><a href="phukiennam.html">Quần</a></li>
+                                            <li><a href="phukiennam.html">Áo</a></li>
+                                            <li><a href="phukiennam.html">Tất</a></li>
+                                            <li><a href="phukiennam.html">Đồng hồ</a></li>
+                                             <li><a href="phukiennam.html">Bình nước</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="column-2 column">
+                                        <ul>
+                                            <li><a href="phukiennu.html">Nữ</a></li>
+                                            <li><a href="phukiennu.html">Quần</a></li>
+                                            <li><a href="phukiennu.html">Áo</a></li>
+                                            <li><a href="phukiennu.html">Tất</a></li>
+                                            <li><a href="phukiennu.html">Đồng hồ</a></li>
+                                             <li><a href="phukiennu.html">Bình nước</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li><a href="tintuc.html">Tin tức</a></li>
+                            <li><a href="lienhe.html">Liên hệ</a>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-menu hidden-md hidden-lg">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html" class="active">Trang chủ</a>
+                                
+                            </li>
+                            <li><a href="danhsachsanpham.html">Sản phẩm</a>
+                                <ul>
+                                    <li><a href="nam.html">Nam</a></li>
+                                    <li><a href="nu.html">Nữ</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="phukien.html">Phụ kiện</a>
+                                <ul>
+                                    <li><a href="phukiennam.html">Nam</a>
+                                    <ul>
+                                        <li><a href="phukiennam.html">Quần</a></li>
+                                        <li><a href="phukiennam.html">Áo</a></li>
+                                        <li><a href="phukiennam.html">Tất</a></li>
+                                        <li><a href="phukiennam.html">Đồng hồ</a></li>
+                                        <li><a href="phukiennam.html">Bình nước</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="phukiennu.html">Nữ</a>
+                                    <ul>
+                                        <li><a href="phukiennu.html">Quần</a></li>
+                                        <li><a href="phukiennu.html">Áo</a></li>
+                                        <li><a href="phukiennu.html">Tất</a></li>
+                                        <li><a href="phukiennu.html">Đồng hồ</a></li>
+                                        <li><a href="phukiennu.html">Bình nước</a></li>
+                                    </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                           
+                            
+                            <li><a href="tintuc.html">Tin tức</a>
+                                
+                            </li>
+                            <li><a href="lienhe.html">Contact</a>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-5">
+                 <div class="cart-info float-right">
+                    <a href="cart.html">
+                        <h5><span>2</span> sản phẩm - <span>1.300.000đ</span></h5>
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <div class="cart-hover">
+                        <ul class="header-cart-pro">
+                            <li>
+                                <div class="image"><a href="#"><img alt="cart item" src="image/nu/bitis/bitis-tim.jpg"></a></div>
+                                 <div class="content fix"><a href="#">Hunter Feast xanh </a><span class="price">Giá: 650.000đ</span><span class="quantity">Số lượng: 1</span></div>
+                                <i class="fa fa-trash delete"></i>
+                            </li>
+                            <li>
+                                <div class="image"><a href="#"><img alt="cart item" src="image/nu/bitis/bitis-hong.jpg"></a></div>
+                                <div class="content fix"><a href="#">Hunter Feast Hong </a><span class="price">Giá: 650.000đ</span><span class="quantity">Số lượng: 1</span></div>
+                                <i class="fa fa-trash delete"></i>
+                            </li>
+                        </ul>
+                        <div class="header-button-price">
+                           <a href="checkout.html" style="margin-top: 16px;"><i class="fa fa-sign-out"></i><span>Mua hàng</span></a>
+                            <div class="total-price"><h3>Tổng tiền : <span>1.300.000đ</span></h3></div>
+                        </div>
+                    </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+        </div>
+    </div><!--End Main Menu Area-->   
+
+  <!-- breadcrumb-area start -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="home.html">Home</a> <i class="fa fa-angle-right"></i></li>
+                            
+                            <li>Yêu thích</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb-area end -->  
+<section class="container">
+    
+      
+          <div class="row">
+            <div class="col-md-12">
+          
+              
+              <table class="shop-table">
+                <thead class="header_responsive">
+                  <tr>
+                    <th>
+                      Ảnh
+                    </th>
+                    <th>
+                      Tên sản phẩm
+                    </th>
+                    <th>
+                      Giá
+                    </th>
+                    <th>
+                      Tình trạng
+                    </th>
+                    <th>
+                      &nbsp;
+                    </th>
+                    <th>
+                      Xóa
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="product1">
+                        <td>
+                         <img src="image/nam/bitis/bitis-xam.jpg" alt="">
+                        </td>
+                        <td>
+                            <div class="shop-details">
+                              <div class="productname">
+                               Hunter Feast 
+                              </div>
+                            </div>
+                        </td>
+                        <td>
+                              <h5>
+                                  650.000₫
+                              </h5>
+                        </td>
+                        <td class="q_product">
+                            Còn hàng
+                        </td>
+                        <td>
+                            <h5>
+                                <strong class="red">
+                                <a href="giohang.html">Thêm vào giỏ hàng</a>
+                                </strong>
+                            </h5>
+                        </td>
+                        <td>
+                          <a href="#" class="delete1">
+                            <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                          </a>
+                        </td>
+                  </tr>
+                  <tr class="product2">
+                    <td>
+                      <img src="image/nu/adidas/giay-running-adidas-vengeful-nu-bb1637.jpg" alt="">
+                    </td>
+                    <td>
+                      <div class="shop-details">
+                        <div class="productname">
+                         adidas-vengeful
+                        </div>
+                        
+                      
+                      
+                      </div>
+                    </td>
+                    <td>
+                      <h5>
+                        1.290.000₫
+                      </h5>
+                    </td>
+                    <td class="q_product">
+                     Còn hàng
+                    </td>
+                    <td>
+                      <h5>
+                        <strong class="red">
+                          <a href="giohang.html">Thêm vào giỏ hàng</a>
+                        </strong>
+                      </h5>
+                    </td>
+                    <td>
+                      <a href="#" class="delete2">
+                        <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="product3">
+                    <td>
+                      <img src="image/nam/Nike/giay-running-adidas-galaxy-3-nam-bb4360.jpg" alt="">
+                    </td>
+                    <td>
+                      <div class="shop-details">
+                        <div class="productname">
+                         adidas galaxy 3
+                        </div>
+                       
+                      </div>
+                    </td>
+                    <td>
+                      <h5>
+                        1.990.000₫
+                      </h5>
+                    </td>
+                    <td class="q_product">
+                        Còn hàng
+                    </td>
+                    <td>
+                      <h5>
+                        <strong class="red">
+                         <a href="giohang.html">Thêm vào giỏ hàng</a>
+                        </strong>
+                      </h5>
+                    </td>
+                    <td>
+                      <a href="#" class="delete3">
+                        <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+                
+              </table>
+              
+            </div>
+          </div>
+          
+         
+   
+     
+     
+</section>     
+
+
+<!--Main Footer-->
+  <footer class="main-footer">
+        <div class="container-fluid">
+          
+            <!--Subscribe Area-->
+            <div class="subscribe-area">
+              <div class="subs-box">
+                
+                  <div class="row clearfix">
+                        <h2 class="col-md-6 col-sm-12 col-xs-12 pull-left">Subcribe Our <span>News</span></h2>
+                        
+                        <!--Form Box-->
+                        <div class="form-box col-md-6 col-sm-12 col-xs-12  pull-right">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" placeholder="Enter Email" required>
+                                    <button type="submit"><span class="icon fa fa-paper-plane"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Footer Widget Area-->
+            <div class="footer-widget-area clearfix">
+            
+              <!--Footer Widget-->
+                <article class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12 " >
+                  <h3>Thông tin</h3>
+                    <div class="widget-content">
+                      <p><a href="home.html">Trang chủ</a></p>
+                        <p><a href="danhsachsanpham.html">Điện thoại</a></p>
+                        <p><a href="phukien.html">Phụ kiện</a></p>
+                        <p><a href="khuyenmai.html">Khuyến mại</a></p>
+                        <p><a href="lienhe.html">Liên hệ</a></p>
+                    </div>
+                </article>
+                
+                <!--Footer Widget-->
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 ">
+                  <h3>Chính sách</h3>
+                    <div class="widget-content">
+                      <ul>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Đổi và trả hàng hoá</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Nội quy cửa hàng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Vận chuyển miễn phí</a></li>
+                            <li><span class="fa fa-angle-right"></span> <a href="lienhe.html">Bảo hành</a></li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <!--Footer Widget-->
+                <article class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 " >
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <div class="widget-content">
+                      <ul>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Giải quyết khiếu nại</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Kiểm tra hàng Apple chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hàng hoá chính hãng</a></li>
+                            <li><span class="fa fa-angle-right"></span><a href="lienhe.html">Hướng dẫn mua trả góp</a></li>
+                        </ul>
+            </div>
+                </article>
+                <!--Footer Widget-->
+                <article class="footer-widget address col-md-3 col-sm-6 col-xs-12 ">
+                  <h3>Địa chỉ</h3>
+                    <div class="widget-content">
+                      <ul class="info">
+                          <li><span class="fa fa-map-marker"></span> &ensp; 169 Ga Đỗ Xá-Thường Tín-Hà Nội</li>
+                            <li><span class="fa fa-phone"></span> &ensp; 0943271111 - 0938969696</li>
+                            <li><span class="fa fa-envelope"></span> &ensp; <a href="mailto:info@companyname.com">thanhquan@gmail.com</a></li>
+                        </ul>
+                        
+                        <div class="social"><a class="img-circle fa fa-facebook-f" href="#"></a> <a class="img-circle fa fa-twitter" href="#"></a> <a class="img-circle fa fa-google-plus" href="#"></a> <a class="img-circle fa fa-linkedin" href="#"></a></div>
+                    </div>
+                </article>
+                
+                
+                
+            </div>
+            
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+          <div class="auto-container text-center"></div>
+        </div>
+        
+  </footer><!--Main Footer End--> 
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+  <script type="text/javascript">
+       $(".delete1").click(function(){
+        $(".product1").remove();
+    });
+       $(".delete2").click(function(){
+        $(".product2").remove();
+    });
+       $(".delete3").click(function(){
+        $(".product3").remove();
+    });
+
+       $('.mobile-menu nav').meanmenu({
+        meanScreenWidth: "990",
+        meanMenuContainer: ".mobile-menu",
+    });
+  </script>
+</body>
+</html>
