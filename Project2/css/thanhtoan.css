@@ -147,6 +147,9 @@
  .form-group .sale_content{
   display: none;
  }
+ .form-group .sale_content .form-control{
+    width: 232px;
+ }
  .order-items{
   height: 146px;
  }
